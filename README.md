@@ -1,4 +1,2 @@
-# grupo47
- A87980 JoséRafaelPiresReis jrafaelr06
- A85846 JoãoTadeuCorreiaTorres jotorres526
- A87961 JoséPedroRodriguesManso joseprm7
+Made without any semblance of love for LI3 by
+Me, José Reis and José Manso
