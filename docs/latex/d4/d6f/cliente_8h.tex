@@ -1,0 +1,131 @@
+\hypertarget{cliente_8h}{}\doxysection{include/cliente.h File Reference}
+\label{cliente_8h}\index{include/cliente.h@{include/cliente.h}}
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+Include dependency graph for cliente.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{d2/d62/cliente_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dda/cliente_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}\label{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}} 
+typedef struct \mbox{\hyperlink{structcliente}{cliente}} $\ast$ \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}
+\begin{DoxyCompactList}\small\item\em Definicao do tipo Cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} \mbox{\hyperlink{cliente_8h_a336fc1ceb9f00211c99ed29da52dcf8a}{cria\+Cliente}} (char $\ast$cod\+Cliente)
+\begin{DoxyCompactList}\small\item\em Cria um cliente com um dado código. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cliente_8h_a491450f25388fed2cd22d0e7956f5c3d}{compare\+Cliente}} (\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c1, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c2)
+\begin{DoxyCompactList}\small\item\em Compara dois clientes por ordem alfabética. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{cliente_8h_a74773b5a97cdef7b13ff1ad810095048}{validate\+Client}} (\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Verifica se um cliente é válido. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{cliente_8h_a600271271abea8deb13eeb9c8cfa0307}{get\+Cod\+Cliente}} (\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Retorna o código de um cliente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cliente_8h_aa4c5339bb1b936978b25c7fac58540e3}{close\+Cliente}} (\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Apaga de memória um cliente e o seu código. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão da entidade cliente e das funcões que a manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cliente_8h_aa4c5339bb1b936978b25c7fac58540e3}\label{cliente_8h_aa4c5339bb1b936978b25c7fac58540e3}} 
+\index{cliente.h@{cliente.h}!closeCliente@{closeCliente}}
+\index{closeCliente@{closeCliente}!cliente.h@{cliente.h}}
+\doxysubsubsection{\texorpdfstring{closeCliente()}{closeCliente()}}
+{\footnotesize\ttfamily void close\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Apaga de memória um cliente e o seu código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Cliente a apagar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cliente_8h_a491450f25388fed2cd22d0e7956f5c3d}\label{cliente_8h_a491450f25388fed2cd22d0e7956f5c3d}} 
+\index{cliente.h@{cliente.h}!compareCliente@{compareCliente}}
+\index{compareCliente@{compareCliente}!cliente.h@{cliente.h}}
+\doxysubsubsection{\texorpdfstring{compareCliente()}{compareCliente()}}
+{\footnotesize\ttfamily int compare\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c1,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c2 }\end{DoxyParamCaption})}
+
+
+
+Compara dois clientes por ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & -\/ Primeiro cliente da comparacão \\
+\hline
+{\em c2} & -\/ Segundo cliente da comparacão \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se forem iguais; maior do que 0 se c2 for maior que c1; menor do que 0 caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{cliente_8h_a336fc1ceb9f00211c99ed29da52dcf8a}\label{cliente_8h_a336fc1ceb9f00211c99ed29da52dcf8a}} 
+\index{cliente.h@{cliente.h}!criaCliente@{criaCliente}}
+\index{criaCliente@{criaCliente}!cliente.h@{cliente.h}}
+\doxysubsubsection{\texorpdfstring{criaCliente()}{criaCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} cria\+Cliente (\begin{DoxyParamCaption}\item[{char $\ast$}]{cod\+Cliente }\end{DoxyParamCaption})}
+
+
+
+Cria um cliente com um dado código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod\+Cliente} & -\/ Código que será atribuido ao cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cliente criado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{cliente_8h_a600271271abea8deb13eeb9c8cfa0307}\label{cliente_8h_a600271271abea8deb13eeb9c8cfa0307}} 
+\index{cliente.h@{cliente.h}!getCodCliente@{getCodCliente}}
+\index{getCodCliente@{getCodCliente}!cliente.h@{cliente.h}}
+\doxysubsubsection{\texorpdfstring{getCodCliente()}{getCodCliente()}}
+{\footnotesize\ttfamily char$\ast$ get\+Cod\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Retorna o código de um cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Cliente que será extraido o código \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código de cliente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{cliente_8h_a74773b5a97cdef7b13ff1ad810095048}\label{cliente_8h_a74773b5a97cdef7b13ff1ad810095048}} 
+\index{cliente.h@{cliente.h}!validateClient@{validateClient}}
+\index{validateClient@{validateClient}!cliente.h@{cliente.h}}
+\doxysubsubsection{\texorpdfstring{validateClient()}{validateClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} validate\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Verifica se um cliente é válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Cliente a validar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True caso o cliente seja válido, False caso contrário 
+\end{DoxyReturn}

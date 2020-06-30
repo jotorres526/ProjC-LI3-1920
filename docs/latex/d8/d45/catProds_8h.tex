@@ -1,0 +1,263 @@
+\hypertarget{catProds_8h}{}\doxysection{include/cat\+Prods.h File Reference}
+\label{catProds_8h}\index{include/catProds.h@{include/catProds.h}}
+{\ttfamily \#include \char`\"{}produto.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+V\+L.\+h\char`\"{}}\newline
+Include dependency graph for cat\+Prods.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{d9/d92/catProds_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d45/catProds_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcatProds}{cat\+Prods}} $\ast$ \mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}
+\begin{DoxyCompactList}\small\item\em Definição do tipo Catalogos de Produtos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}\label{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}} 
+typedef struct \mbox{\hyperlink{structlstProds}{lst\+Prods}} $\ast$ \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}
+\begin{DoxyCompactList}\small\item\em Definição do tipo Lista de Produtos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} \mbox{\hyperlink{catProds_8h_a89c27ba89de89bd882f0135e113f2f83}{init\+Cat\+Prods}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa um catálogo de produtos vazio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{catProds_8h_a4ebb2da12aacdabca405a960f335a452}{init\+Node\+L\+Prods}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa um nodo vazia duma lista de produtos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} \mbox{\hyperlink{catProds_8h_a0e4966741948dab8eada9f75ab3165d8}{insere\+Prod}} (\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} cp, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Insere um produto no catálogo de produtos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{catProds_8h_a56f546fb4353ab3f693d0b192f92d9dd}{cons\+Lista\+Prod}} (\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Insere um produto à cabeça da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{catProds_8h_ade56df28ce26f713fb0ef87401775467}{prods\+To\+Lista\+Por\+Letra}} (\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} cp, char letter)
+\begin{DoxyCompactList}\small\item\em Percorre uma A\+VL que contem os produtos começados pela letra recebida como parametro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{catProds_8h_a340723f8e94bd7dfa959266e922f68fd}{existe\+Prod}} (\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} cp, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Verifica se um certo produto existe no catálogo de produtos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{catProds_8h_ac9cb5cf880aa078841085de4ce9103cf}{existe\+Prod\+Lista}} (\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Verifica se um certo produto existe numa lista de produtos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} \mbox{\hyperlink{catProds_8h_ada956ca9f26fbbe143019534f9d78fbe}{get\+Cabeca\+L\+Prods}} (\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp)
+\begin{DoxyCompactList}\small\item\em Devolve a cabeca de uma lista de produtos para mostrar na interface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{catProds_8h_a4dea3bc70ef9a57c70564e9b27911586}{get\+Prox\+L\+Prods}} (\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp)
+\begin{DoxyCompactList}\small\item\em Devolve a cauda de uma lista de produtos para mostrar na interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{catProds_8h_a48b35f2ad21d9815999314e1079f552a}{close\+Cat\+Prods}} (\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} cp)
+\begin{DoxyCompactList}\small\item\em Liberta de memória o catálogo de produtos e os respetivos nodos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{catProds_8h_aae249e5b1021dc4095ebcc24e95c75f4}{close\+Lista\+Prods}} (\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp)
+\begin{DoxyCompactList}\small\item\em Liberta de memória uma lista de produtos e os respetivos nodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definição de catalogo de produtos e as funções que o manipulam/acedem 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}\label{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}} 
+\index{catProds.h@{catProds.h}!CatProds@{CatProds}}
+\index{CatProds@{CatProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{CatProds}{CatProds}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcatProds}{cat\+Prods}}$\ast$ \mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}}
+
+
+
+Definição do tipo Catalogos de Produtos. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{catProds_8h_a48b35f2ad21d9815999314e1079f552a}\label{catProds_8h_a48b35f2ad21d9815999314e1079f552a}} 
+\index{catProds.h@{catProds.h}!closeCatProds@{closeCatProds}}
+\index{closeCatProds@{closeCatProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{closeCatProds()}{closeCatProds()}}
+{\footnotesize\ttfamily void close\+Cat\+Prods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}}]{cp }\end{DoxyParamCaption})}
+
+
+
+Liberta de memória o catálogo de produtos e os respetivos nodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & -\/ Catálogo a libertar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{catProds_8h_aae249e5b1021dc4095ebcc24e95c75f4}\label{catProds_8h_aae249e5b1021dc4095ebcc24e95c75f4}} 
+\index{catProds.h@{catProds.h}!closeListaProds@{closeListaProds}}
+\index{closeListaProds@{closeListaProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{closeListaProds()}{closeListaProds()}}
+{\footnotesize\ttfamily void close\+Lista\+Prods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp }\end{DoxyParamCaption})}
+
+
+
+Liberta de memória uma lista de produtos e os respetivos nodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ Lista a libertar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{catProds_8h_a56f546fb4353ab3f693d0b192f92d9dd}\label{catProds_8h_a56f546fb4353ab3f693d0b192f92d9dd}} 
+\index{catProds.h@{catProds.h}!consListaProd@{consListaProd}}
+\index{consListaProd@{consListaProd}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{consListaProd()}{consListaProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} cons\+Lista\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Insere um produto à cabeça da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ Lista onde se irá inserir o produto \\
+\hline
+{\em p} & -\/ Produto a inserir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista com o novo produto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_a340723f8e94bd7dfa959266e922f68fd}\label{catProds_8h_a340723f8e94bd7dfa959266e922f68fd}} 
+\index{catProds.h@{catProds.h}!existeProd@{existeProd}}
+\index{existeProd@{existeProd}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{existeProd()}{existeProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}}]{cp,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica se um certo produto existe no catálogo de produtos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & -\/ Catálogo onde se vai procurar o produto \\
+\hline
+{\em p} & -\/ produto que se está à procura \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Verdadeiro se o produto estiver no catálogo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_ac9cb5cf880aa078841085de4ce9103cf}\label{catProds_8h_ac9cb5cf880aa078841085de4ce9103cf}} 
+\index{catProds.h@{catProds.h}!existeProdLista@{existeProdLista}}
+\index{existeProdLista@{existeProdLista}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{existeProdLista()}{existeProdLista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Prod\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica se um certo produto existe numa lista de produtos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ Lista onde se vai procurar o produto \\
+\hline
+{\em p} & -\/ Produto que se está à procura \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Verdadeiro se o produto estiver na lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_ada956ca9f26fbbe143019534f9d78fbe}\label{catProds_8h_ada956ca9f26fbbe143019534f9d78fbe}} 
+\index{catProds.h@{catProds.h}!getCabecaLProds@{getCabecaLProds}}
+\index{getCabecaLProds@{getCabecaLProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{getCabecaLProds()}{getCabecaLProds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} get\+Cabeca\+L\+Prods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp }\end{DoxyParamCaption})}
+
+
+
+Devolve a cabeca de uma lista de produtos para mostrar na interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ Lista que retorna a cabeça \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Produto da cabeça da lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_a4dea3bc70ef9a57c70564e9b27911586}\label{catProds_8h_a4dea3bc70ef9a57c70564e9b27911586}} 
+\index{catProds.h@{catProds.h}!getProxLProds@{getProxLProds}}
+\index{getProxLProds@{getProxLProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{getProxLProds()}{getProxLProds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Prox\+L\+Prods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp }\end{DoxyParamCaption})}
+
+
+
+Devolve a cauda de uma lista de produtos para mostrar na interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lp} & -\/ Lista que retorna a cauda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cauda da lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_a89c27ba89de89bd882f0135e113f2f83}\label{catProds_8h_a89c27ba89de89bd882f0135e113f2f83}} 
+\index{catProds.h@{catProds.h}!initCatProds@{initCatProds}}
+\index{initCatProds@{initCatProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{initCatProds()}{initCatProds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} init\+Cat\+Prods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa um catálogo de produtos vazio. 
+
+\begin{DoxyReturn}{Returns}
+Catalogo de produtos vazio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_a4ebb2da12aacdabca405a960f335a452}\label{catProds_8h_a4ebb2da12aacdabca405a960f335a452}} 
+\index{catProds.h@{catProds.h}!initNodeLProds@{initNodeLProds}}
+\index{initNodeLProds@{initNodeLProds}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{initNodeLProds()}{initNodeLProds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} init\+Node\+L\+Prods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa um nodo vazia duma lista de produtos. 
+
+\begin{DoxyReturn}{Returns}
+Nodo vazio duma lista de produtos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_a0e4966741948dab8eada9f75ab3165d8}\label{catProds_8h_a0e4966741948dab8eada9f75ab3165d8}} 
+\index{catProds.h@{catProds.h}!insereProd@{insereProd}}
+\index{insereProd@{insereProd}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{insereProd()}{insereProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}} insere\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}}]{cp,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Insere um produto no catálogo de produtos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & -\/ Catálogo onde será inserido o produto \\
+\hline
+{\em p} & -\/ Produto a inserir no catálogo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Catálogo com o produto inserido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catProds_8h_ade56df28ce26f713fb0ef87401775467}\label{catProds_8h_ade56df28ce26f713fb0ef87401775467}} 
+\index{catProds.h@{catProds.h}!prodsToListaPorLetra@{prodsToListaPorLetra}}
+\index{prodsToListaPorLetra@{prodsToListaPorLetra}!catProds.h@{catProds.h}}
+\doxysubsubsection{\texorpdfstring{prodsToListaPorLetra()}{prodsToListaPorLetra()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} prods\+To\+Lista\+Por\+Letra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catProds_8h_a2aba17964bb87f7eb0935aba5fb9a1dc}{Cat\+Prods}}}]{cp,  }\item[{char}]{letter }\end{DoxyParamCaption})}
+
+
+
+Percorre uma A\+VL que contem os produtos começados pela letra recebida como parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & -\/ Catálogo dos produtos \\
+\hline
+{\em letter} & -\/ Letra pelo qual os produtos retornados começam \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Prods onde todos os elementos começam pela \char`\"{}letter\char`\"{} e estão ordenados crescentemente 
+\end{DoxyReturn}

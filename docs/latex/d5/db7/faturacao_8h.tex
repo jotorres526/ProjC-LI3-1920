@@ -1,0 +1,208 @@
+\hypertarget{faturacao_8h}{}\doxysection{include/faturacao.h File Reference}
+\label{faturacao_8h}\index{include/faturacao.h@{include/faturacao.h}}
+{\ttfamily \#include \char`\"{}produto.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}filial.\+h\char`\"{}}\newline
+Include dependency graph for faturacao.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d0f/faturacao_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}\label{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}} 
+typedef struct \mbox{\hyperlink{structfaturacao}{faturacao}} $\ast$ \mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}
+\begin{DoxyCompactList}\small\item\em Definicao do tipo Faturacao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} \mbox{\hyperlink{faturacao_8h_a124beda6accfd5a98faf6665a368a440}{init\+Faturacao}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma faturacao vazia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} \mbox{\hyperlink{faturacao_8h_af761b71b94faf285c3db3dd5e059a2a1}{insere\+Registo\+Faturacao}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Insere um produto na estrutura da faturacão. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} \mbox{\hyperlink{faturacao_8h_ace053d37c79eb0be34ed06d567ead117}{aumenta\+Faturacao}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p, float preco, int quant, int \mbox{\hyperlink{structfilial}{filial}}, int m, char np)
+\begin{DoxyCompactList}\small\item\em Aumenta os dados parametros de um produto da faturacao. \end{DoxyCompactList}\item 
+float $\ast$$\ast$ \mbox{\hyperlink{faturacao_8h_aaeb5eabe0189ab64290275cf87e6fb53}{fat\+Por\+Produto\+Mes}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} fat, char $\ast$cod\+Prod, int m)
+\begin{DoxyCompactList}\small\item\em Retorna o total faturado de um produto num certo mês. \end{DoxyCompactList}\item 
+long double $\ast$ \mbox{\hyperlink{faturacao_8h_afccc28f0dd07b69814373d687fba76fd}{reg\+And\+Fat\+Entre\+Meses}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f, int min\+Month, int max\+Month)
+\begin{DoxyCompactList}\small\item\em Retorna o total faturado de todos os produtos e o numero de vendas entre dois meses. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{faturacao_8h_a96f50854b3d2e863afae1f34f60f587a}{prods\+Fatur\+Nunca\+Comprados}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f, \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} r, int branch\+ID)
+\begin{DoxyCompactList}\small\item\em Procura os produtos que nunca foram comprados numa faturacao ou por filial. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{faturacao_8h_ad97cbecb9334acc414215cb2f39dfbf8}{get\+Num\+Reg\+Venda\+Fat\+Filial}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f, char $\ast$p, int branch)
+\begin{DoxyCompactList}\small\item\em Calcula o numero de registos de venda de um produto por filial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{faturacao_8h_a74c1925c76beff71b8ea7bc3081a690a}{close\+Faturacao}} (\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} f)
+\begin{DoxyCompactList}\small\item\em Apaga de memória uma faturacao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão da entidade faturacao e das funcões que a manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{faturacao_8h_ace053d37c79eb0be34ed06d567ead117}\label{faturacao_8h_ace053d37c79eb0be34ed06d567ead117}} 
+\index{faturacao.h@{faturacao.h}!aumentaFaturacao@{aumentaFaturacao}}
+\index{aumentaFaturacao@{aumentaFaturacao}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{aumentaFaturacao()}{aumentaFaturacao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} aumenta\+Faturacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p,  }\item[{float}]{preco,  }\item[{int}]{quant,  }\item[{int}]{filial,  }\item[{int}]{m,  }\item[{char}]{np }\end{DoxyParamCaption})}
+
+
+
+Aumenta os dados parametros de um produto da faturacao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao onde irá ser alterado um produto \\
+\hline
+{\em p} & -\/ Produto a ser aumentado \\
+\hline
+{\em preco} & -\/ Valor em que irá ser aumentado o preco \\
+\hline
+{\em quant} & -\/ Quantidade que irá ser aumentada \\
+\hline
+{\em filial} & -\/ Numero da filial onde o produto foi vendido \\
+\hline
+{\em m} & -\/ Mes do registo da faturacao \\
+\hline
+{\em np} & -\/ Tipo de compra N ou P \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Faturacao atualizada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_a74c1925c76beff71b8ea7bc3081a690a}\label{faturacao_8h_a74c1925c76beff71b8ea7bc3081a690a}} 
+\index{faturacao.h@{faturacao.h}!closeFaturacao@{closeFaturacao}}
+\index{closeFaturacao@{closeFaturacao}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{closeFaturacao()}{closeFaturacao()}}
+{\footnotesize\ttfamily void close\+Faturacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Apaga de memória uma faturacao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao a apagar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{faturacao_8h_aaeb5eabe0189ab64290275cf87e6fb53}\label{faturacao_8h_aaeb5eabe0189ab64290275cf87e6fb53}} 
+\index{faturacao.h@{faturacao.h}!fatPorProdutoMes@{fatPorProdutoMes}}
+\index{fatPorProdutoMes@{fatPorProdutoMes}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{fatPorProdutoMes()}{fatPorProdutoMes()}}
+{\footnotesize\ttfamily float$\ast$$\ast$ fat\+Por\+Produto\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{fat,  }\item[{char $\ast$}]{cod\+Prod,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Retorna o total faturado de um produto num certo mês. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao onde irá ser procurado o produto \\
+\hline
+{\em cod\+Prod} & -\/ Código do produto a procurar \\
+\hline
+{\em m} & -\/ Mês a ter em consideracão \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matriz que tem a faturacão total N e P juntamente com o total de vendas N e P 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_ad97cbecb9334acc414215cb2f39dfbf8}\label{faturacao_8h_ad97cbecb9334acc414215cb2f39dfbf8}} 
+\index{faturacao.h@{faturacao.h}!getNumRegVendaFatFilial@{getNumRegVendaFatFilial}}
+\index{getNumRegVendaFatFilial@{getNumRegVendaFatFilial}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{getNumRegVendaFatFilial()}{getNumRegVendaFatFilial()}}
+{\footnotesize\ttfamily int get\+Num\+Reg\+Venda\+Fat\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f,  }\item[{char $\ast$}]{p,  }\item[{int}]{branch }\end{DoxyParamCaption})}
+
+
+
+Calcula o numero de registos de venda de um produto por filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao que irá ser \char`\"{}varrida\char`\"{} \\
+\hline
+{\em p} & -\/ Código do produto \\
+\hline
+{\em branch} & -\/ ID da filial que queremos verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Numero de registos de venda 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_a124beda6accfd5a98faf6665a368a440}\label{faturacao_8h_a124beda6accfd5a98faf6665a368a440}} 
+\index{faturacao.h@{faturacao.h}!initFaturacao@{initFaturacao}}
+\index{initFaturacao@{initFaturacao}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{initFaturacao()}{initFaturacao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} init\+Faturacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma faturacao vazia. 
+
+\begin{DoxyReturn}{Returns}
+Faturacao vazia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_af761b71b94faf285c3db3dd5e059a2a1}\label{faturacao_8h_af761b71b94faf285c3db3dd5e059a2a1}} 
+\index{faturacao.h@{faturacao.h}!insereRegistoFaturacao@{insereRegistoFaturacao}}
+\index{insereRegistoFaturacao@{insereRegistoFaturacao}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{insereRegistoFaturacao()}{insereRegistoFaturacao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}} insere\+Registo\+Faturacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Insere um produto na estrutura da faturacão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao onde irá ser inserido o produto \\
+\hline
+{\em p} & -\/ Produto a inserir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Faturacao com o produto inserido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_a96f50854b3d2e863afae1f34f60f587a}\label{faturacao_8h_a96f50854b3d2e863afae1f34f60f587a}} 
+\index{faturacao.h@{faturacao.h}!prodsFaturNuncaComprados@{prodsFaturNuncaComprados}}
+\index{prodsFaturNuncaComprados@{prodsFaturNuncaComprados}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{prodsFaturNuncaComprados()}{prodsFaturNuncaComprados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} prods\+Fatur\+Nunca\+Comprados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f,  }\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{r,  }\item[{int}]{branch\+ID }\end{DoxyParamCaption})}
+
+
+
+Procura os produtos que nunca foram comprados numa faturacao ou por filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao que irá ser \char`\"{}varrida\char`\"{} \\
+\hline
+{\em r} & -\/ Lista de produtos que irá ser construida com chamadas sucessivas desta funcão \\
+\hline
+{\em branch\+ID} & -\/ ID da filial que queremos verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista dos produtos que não foram comprados 
+\end{DoxyReturn}
+\mbox{\Hypertarget{faturacao_8h_afccc28f0dd07b69814373d687fba76fd}\label{faturacao_8h_afccc28f0dd07b69814373d687fba76fd}} 
+\index{faturacao.h@{faturacao.h}!regAndFatEntreMeses@{regAndFatEntreMeses}}
+\index{regAndFatEntreMeses@{regAndFatEntreMeses}!faturacao.h@{faturacao.h}}
+\doxysubsubsection{\texorpdfstring{regAndFatEntreMeses()}{regAndFatEntreMeses()}}
+{\footnotesize\ttfamily long double$\ast$ reg\+And\+Fat\+Entre\+Meses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{faturacao_8h_a94c0ca31555b1dcf9738596e34e21a53}{Faturacao}}}]{f,  }\item[{int}]{min\+Month,  }\item[{int}]{max\+Month }\end{DoxyParamCaption})}
+
+
+
+Retorna o total faturado de todos os produtos e o numero de vendas entre dois meses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Faturacao que irá ser \char`\"{}varrida\char`\"{} \\
+\hline
+{\em min\+Month} & -\/ Limite inferior \\
+\hline
+{\em max\+Month} & -\/ Limite superior \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de long doubles com total faturado e o total de vendas 
+\end{DoxyReturn}

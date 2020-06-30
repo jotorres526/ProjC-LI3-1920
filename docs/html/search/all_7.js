@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['inicializaavl_89',['inicializaAVL',['../d9/da4/AVL_8h.html#a43d61b3293a0ed52f7593bf674746cbc',1,'AVL.c']]],
+  ['initavlregistos_90',['initAVLRegistos',['../db/d47/AVLRegistos_8h.html#a9cc80f2dd7229d19c8861ad7395d8fb3',1,'AVLRegistos.c']]],
+  ['initcatclientes_91',['initCatClientes',['../d2/d56/catClientes_8h.html#a5d05efd119b6e9d123073a0c25ef8bfa',1,'catClientes.c']]],
+  ['initcatprods_92',['initCatProds',['../d8/d45/catProds_8h.html#a89c27ba89de89bd882f0135e113f2f83',1,'catProds.c']]],
+  ['initfaturacao_93',['initFaturacao',['../d5/db7/faturacao_8h.html#a124beda6accfd5a98faf6665a368a440',1,'faturacao.c']]],
+  ['initfilial_94',['initFilial',['../d1/da9/filial_8h.html#a7bdae2d34ae3bb778cd6b61d2b0f5b92',1,'filial.c']]],
+  ['initlistaclientes_95',['initListaClientes',['../d2/d56/catClientes_8h.html#a5146f08ec22ba73e6f1d2f299fa21cd8',1,'catClientes.c']]],
+  ['initnodelprods_96',['initNodeLProds',['../d8/d45/catProds_8h.html#a4ebb2da12aacdabca405a960f335a452',1,'catProds.c']]],
+  ['initregistofaturacao_97',['initRegistoFaturacao',['../dd/d50/RegistoFat_8h.html#a89440397e6363bcf5df226737d05cf5d',1,'RegistoFat.c']]],
+  ['initsgv_98',['initSGV',['../d0/d67/sgv_8h.html#a14c3840c38c574667ca887b40c5250bb',1,'sgv.c']]],
+  ['insereavl_99',['insereAVL',['../d9/da4/AVL_8h.html#a2f298ace6a25666b28536b5a7d368eae',1,'AVL.c']]],
+  ['insereavlregistos_100',['insereAVLRegistos',['../db/d47/AVLRegistos_8h.html#af4df78d0525ccff9c13f59c2b32a9738',1,'AVLRegistos.c']]],
+  ['inserecliente_101',['insereCliente',['../d2/d56/catClientes_8h.html#a58abfd8682143ed1b4b11550a1e36ca9',1,'catClientes.c']]],
+  ['insereclientefilial_102',['insereClienteFilial',['../d1/da9/filial_8h.html#af17dac798e6c74b6454e5fe795c4def3',1,'filial.c']]],
+  ['insereprod_103',['insereProd',['../d8/d45/catProds_8h.html#a0e4966741948dab8eada9f75ab3165d8',1,'catProds.c']]],
+  ['insereregistofaturacao_104',['insereRegistoFaturacao',['../d5/db7/faturacao_8h.html#af761b71b94faf285c3db3dd5e059a2a1',1,'faturacao.c']]],
+  ['insereregistofilial_105',['insereRegistoFilial',['../d1/da9/filial_8h.html#ad915e77dfa83d8212f050e17e8a54b9e',1,'filial.c']]],
+  ['insereregistolistancomp_106',['insereRegistoListaNComp',['../d5/dc2/RegistoFilial_8h.html#a565744e83127e363aebf89f5887a15a2',1,'RegistoFilial.c']]],
+  ['interface_2eh_107',['interface.h',['../d4/da9/interface_8h.html',1,'']]],
+  ['iscomprado_108',['isComprado',['../dd/d50/RegistoFat_8h.html#a38f56a1101c7dbf7712b2657ce16e4b5',1,'RegistoFat.c']]],
+  ['isvalidprod_109',['isValidProd',['../d2/de5/produto_8h.html#abf6f7d3b7d7f85f51588ed79d640bcdd',1,'produto.c']]]
+];

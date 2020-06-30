@@ -1,0 +1,226 @@
+\hypertarget{catClientes_8h}{}\doxysection{include/cat\+Clientes.h File Reference}
+\label{catClientes_8h}\index{include/catClientes.h@{include/catClientes.h}}
+{\ttfamily \#include \char`\"{}cliente.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+V\+L.\+h\char`\"{}}\newline
+Include dependency graph for cat\+Clientes.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{d6/d5e/catClientes_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dac/catClientes_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}\label{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}} 
+typedef struct \mbox{\hyperlink{structcatClientes}{cat\+Clientes}} $\ast$ \mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}}
+\begin{DoxyCompactList}\small\item\em Definicao do tipo catalogos de clientes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}\label{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}} 
+typedef struct \mbox{\hyperlink{structlistaClientes}{lista\+Clientes}} $\ast$ \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}
+\begin{DoxyCompactList}\small\item\em Definicao do tipo lista de clientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} \mbox{\hyperlink{catClientes_8h_a5d05efd119b6e9d123073a0c25ef8bfa}{init\+Cat\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa um catalogo de clientes vazio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{catClientes_8h_a5146f08ec22ba73e6f1d2f299fa21cd8}{init\+Lista\+Clientes}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma lista de clientes vazia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{catClientes_8h_a99a8a94dd422de0c8bed794024be8af7}{cons\+Lista\+Clientes}} (\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Insere um cliente à cabeca lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} \mbox{\hyperlink{catClientes_8h_a58abfd8682143ed1b4b11550a1e36ca9}{insere\+Cliente}} (\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} catc, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Insere um cliente no catálogo de clientes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{catClientes_8h_afe5f8d51c0d5c470436cfe01f0be3552}{get\+Clientes\+Dup\+Todas\+Listas}} (\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Constrói uma lista de clientes onde os elementos se encontram em todas as listas passadas como paramêtro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{catClientes_8h_a7c9b500eb93bef2928e62ba194c7708f}{existe\+Cliente}} (\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} cc, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c)
+\begin{DoxyCompactList}\small\item\em Verifica no catálogo de clientes se existe um dado cliente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} \mbox{\hyperlink{catClientes_8h_a9597aeaa3b84a88ad352a0e60c4b0969}{get\+Cabeca\+L\+Clientes}} (\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc)
+\begin{DoxyCompactList}\small\item\em Devolve a cabeca de uma lista de clientes para mostrar na interface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{catClientes_8h_a2f600bb70e676c5b7a20bc01f7e50eb4}{get\+Prox\+L\+Clientes}} (\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc)
+\begin{DoxyCompactList}\small\item\em Devolve a cauda de uma lista de clientes para mostrar na interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{catClientes_8h_adc0f390c5521ec88b3be358a754f7480}{close\+Lista\+Clientes}} (\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc)
+\begin{DoxyCompactList}\small\item\em Liberta de memória uma lista de clientes e os respetivos nodos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{catClientes_8h_ac1b656de877170160a03451eab5ee747}{close\+Cat\+Clientes}} (\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} cc)
+\begin{DoxyCompactList}\small\item\em Liberta de memória o catálogo de clientes e os respetivos nodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão do catalogo de clientes e as funcões que o manipulam/acedem 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{catClientes_8h_ac1b656de877170160a03451eab5ee747}\label{catClientes_8h_ac1b656de877170160a03451eab5ee747}} 
+\index{catClientes.h@{catClientes.h}!closeCatClientes@{closeCatClientes}}
+\index{closeCatClientes@{closeCatClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{closeCatClientes()}{closeCatClientes()}}
+{\footnotesize\ttfamily void close\+Cat\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}}}]{cc }\end{DoxyParamCaption})}
+
+
+
+Liberta de memória o catálogo de clientes e os respetivos nodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & -\/ Catálogo a libertar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{catClientes_8h_adc0f390c5521ec88b3be358a754f7480}\label{catClientes_8h_adc0f390c5521ec88b3be358a754f7480}} 
+\index{catClientes.h@{catClientes.h}!closeListaClientes@{closeListaClientes}}
+\index{closeListaClientes@{closeListaClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{closeListaClientes()}{closeListaClientes()}}
+{\footnotesize\ttfamily void close\+Lista\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc }\end{DoxyParamCaption})}
+
+
+
+Liberta de memória uma lista de clientes e os respetivos nodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lc} & -\/ Lista a libertar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{catClientes_8h_a99a8a94dd422de0c8bed794024be8af7}\label{catClientes_8h_a99a8a94dd422de0c8bed794024be8af7}} 
+\index{catClientes.h@{catClientes.h}!consListaClientes@{consListaClientes}}
+\index{consListaClientes@{consListaClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{consListaClientes()}{consListaClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} cons\+Lista\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Insere um cliente à cabeca lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lc} & -\/ Lista onde se irá inserir o cliente \\
+\hline
+{\em c} & -\/ Cliente a inserir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de clientes com o novo cliente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a7c9b500eb93bef2928e62ba194c7708f}\label{catClientes_8h_a7c9b500eb93bef2928e62ba194c7708f}} 
+\index{catClientes.h@{catClientes.h}!existeCliente@{existeCliente}}
+\index{existeCliente@{existeCliente}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{existeCliente()}{existeCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} existe\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}}}]{cc,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Verifica no catálogo de clientes se existe um dado cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cc} & -\/ Catálogo onde se irá procurar \\
+\hline
+{\em c} & -\/ Cliente a procurar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for encontrado o cliente e False caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a9597aeaa3b84a88ad352a0e60c4b0969}\label{catClientes_8h_a9597aeaa3b84a88ad352a0e60c4b0969}} 
+\index{catClientes.h@{catClientes.h}!getCabecaLClientes@{getCabecaLClientes}}
+\index{getCabecaLClientes@{getCabecaLClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{getCabecaLClientes()}{getCabecaLClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} get\+Cabeca\+L\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc }\end{DoxyParamCaption})}
+
+
+
+Devolve a cabeca de uma lista de clientes para mostrar na interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lc} & -\/ Lista que retorna a cabeca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cliente da cabeça da lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_afe5f8d51c0d5c470436cfe01f0be3552}\label{catClientes_8h_afe5f8d51c0d5c470436cfe01f0be3552}} 
+\index{catClientes.h@{catClientes.h}!getClientesDupTodasListas@{getClientesDupTodasListas}}
+\index{getClientesDupTodasListas@{getClientesDupTodasListas}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{getClientesDupTodasListas()}{getClientesDupTodasListas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Clientes\+Dup\+Todas\+Listas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Constrói uma lista de clientes onde os elementos se encontram em todas as listas passadas como paramêtro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lc\mbox{[}$\,$\mbox{]}} & -\/ Array de listas de clientes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes com clientes presentes em todas as listas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a2f600bb70e676c5b7a20bc01f7e50eb4}\label{catClientes_8h_a2f600bb70e676c5b7a20bc01f7e50eb4}} 
+\index{catClientes.h@{catClientes.h}!getProxLClientes@{getProxLClientes}}
+\index{getProxLClientes@{getProxLClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{getProxLClientes()}{getProxLClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Prox\+L\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc }\end{DoxyParamCaption})}
+
+
+
+Devolve a cauda de uma lista de clientes para mostrar na interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lc} & -\/ Lista que retorna a cauda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cauda da lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a5d05efd119b6e9d123073a0c25ef8bfa}\label{catClientes_8h_a5d05efd119b6e9d123073a0c25ef8bfa}} 
+\index{catClientes.h@{catClientes.h}!initCatClientes@{initCatClientes}}
+\index{initCatClientes@{initCatClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{initCatClientes()}{initCatClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} init\+Cat\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa um catalogo de clientes vazio. 
+
+\begin{DoxyReturn}{Returns}
+Catalogo de clientes vazio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a5146f08ec22ba73e6f1d2f299fa21cd8}\label{catClientes_8h_a5146f08ec22ba73e6f1d2f299fa21cd8}} 
+\index{catClientes.h@{catClientes.h}!initListaClientes@{initListaClientes}}
+\index{initListaClientes@{initListaClientes}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{initListaClientes()}{initListaClientes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} init\+Lista\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma lista de clientes vazia. 
+
+\begin{DoxyReturn}{Returns}
+Lista de clientes vazia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{catClientes_8h_a58abfd8682143ed1b4b11550a1e36ca9}\label{catClientes_8h_a58abfd8682143ed1b4b11550a1e36ca9}} 
+\index{catClientes.h@{catClientes.h}!insereCliente@{insereCliente}}
+\index{insereCliente@{insereCliente}!catClientes.h@{catClientes.h}}
+\doxysubsubsection{\texorpdfstring{insereCliente()}{insereCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}} insere\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{catClientes_8h_a2c8938b38c9a4295fefc88c2a5d613f4}{Cat\+Clientes}}}]{catc,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Insere um cliente no catálogo de clientes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em catc} & -\/ Catálogo onde será inserido o cliente \\
+\hline
+{\em c} & -\/ Cliente a inserir no catálogo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Catálogo com o cliente inserido 
+\end{DoxyReturn}

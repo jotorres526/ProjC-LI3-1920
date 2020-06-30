@@ -1,0 +1,429 @@
+\hypertarget{sgv_8h}{}\doxysection{include/sgv.h File Reference}
+\label{sgv_8h}\index{include/sgv.h@{include/sgv.h}}
+{\ttfamily \#include \char`\"{}cat\+Clientes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cat\+Prods.\+h\char`\"{}}\newline
+Include dependency graph for sgv.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{df/d5c/sgv_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{d5/dc7/sgv_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}\label{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}} 
+typedef struct \mbox{\hyperlink{structsgv}{sgv}} $\ast$ \mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}
+\begin{DoxyCompactList}\small\item\em Declaracão do tipo S\+GV Contém o catálogo de produtos, de clientes, das filiais e da faturacão. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sgv_8h_aa68c36dea5598830042e74b318b444b9}\label{sgv_8h_aa68c36dea5598830042e74b318b444b9}} 
+typedef struct \mbox{\hyperlink{structquery9}{query9}} $\ast$ \mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}}
+\begin{DoxyCompactList}\small\item\em Define o tipo que irá ser usado para mostrar o resultado da Query9 na interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{sgv_8h_a14c3840c38c574667ca887b40c5250bb}{init\+S\+GV}} ()
+\begin{DoxyCompactList}\small\item\em Inicializacão de um S\+GV. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{sgv_8h_a08b500ce6a509d64af072a3946e2bbba}{load\+S\+G\+V\+From\+Files}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$dir\+Sales, char $\ast$dir\+Prods, char $\ast$dir\+Clnts)
+\begin{DoxyCompactList}\small\item\em Carrega os ficheiros de vendas, produtos e clientes para o S\+GV. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sgv_8h_a6ff1f2a33466a9979ea075052eea9601}{destroy\+S\+VG}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}})
+\begin{DoxyCompactList}\small\item\em Elimina um S\+GV e os seus catalogos de memória. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{sgv_8h_a739f3f5af43f06b20d5dba867768f316}{get\+Lista\+Clientes\+Q9}} (\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}} q)
+\begin{DoxyCompactList}\small\item\em Retorna a Lista\+Clientes que será mostrada param q -\/ Resultado da query 9. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{sgv_8h_a95def56ec70f569220db88a3b4af8f14}{get\+Compras\+Q9}} (\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}} q)
+\begin{DoxyCompactList}\small\item\em Lê o numero de compras por tipo resultantes da query 9 param q -\/ Resultado da query 9. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sgv_8h_acc30bc95c49b5668c9ebb6b5db7d50bd}{close\+Query9}} (\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}} q)
+\begin{DoxyCompactList}\small\item\em Elimina os resultados da Query 9. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{sgv_8h_a37d50fe5570377b01151d349e9779595}{get\+Valores\+Files\+Info}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}})
+\begin{DoxyCompactList}\small\item\em Retorna informacão sobre os ficheiros abertos anteriormente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{sgv_8h_a1d6f6910d496f1fe0fce5c11916960af}{get\+Products\+Started\+By\+Letter}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char letter)
+\begin{DoxyCompactList}\small\item\em Listagem com todos os produtos comecados por uma dada letra. \end{DoxyCompactList}\item 
+float $\ast$$\ast$ \mbox{\hyperlink{sgv_8h_ac3f9779ae003830c281bc523b11e52a3}{get\+Product\+Sales\+And\+Profit}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$product\+ID, int month)
+\begin{DoxyCompactList}\small\item\em Calcula o numero total de vendas e o total faturado p. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{sgv_8h_ab9a939370f2041bd392f081ce95e9082}{get\+Products\+Never\+Bought}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, int branch\+ID)
+\begin{DoxyCompactList}\small\item\em Calcula os produtos que nunca foram comprados (Total ou numa Filial especifica) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{sgv_8h_addd753cc797d4d1b3ab49f273a568d87}{get\+Clients\+Of\+All\+Branches}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}})
+\begin{DoxyCompactList}\small\item\em Calcula os clientes que fizeram compras em todas as Filiais. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{sgv_8h_a232a8da1e67d12fdc8a2dc584c5f7a57}{get\+Clients\+And\+Products\+Never\+Bought\+Count}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}})
+\begin{DoxyCompactList}\small\item\em Calcula o numero de clientes que nunca compraram nada e o numero de produtos nunca comprados. \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \mbox{\hyperlink{sgv_8h_a266f041cd62279ef90b911cb843f6bc3}{get\+Products\+Bought\+By\+Client}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$client\+ID)
+\begin{DoxyCompactList}\small\item\em Calcula o numero total de compras por mes em cada filial feito por um cliente. \end{DoxyCompactList}\item 
+long double $\ast$ \mbox{\hyperlink{sgv_8h_a6b0cb4e0113ef1d75eab026d0a6b1014}{get\+Sales\+And\+Profit}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, int min\+Month, int max\+Month)
+\begin{DoxyCompactList}\small\item\em Calcular o total de vendas e o total faturado entre dois meses. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}} \mbox{\hyperlink{sgv_8h_a4c3c2e107bb15a09f5ac691e131f0db9}{get\+Product\+Buyers}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$product\+ID, int branch)
+\begin{DoxyCompactList}\small\item\em Calcular a lista de clientes que compraram um dado produto numa filial e quantas dessas compras eram Normais ou em Promocao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{sgv_8h_a091f3484337502c115fa43a7dc11adf3}{get\+Client\+Favorite\+Products}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$client\+ID, int month)
+\begin{DoxyCompactList}\small\item\em Calcular a lista de produtos que um dado cliente mais comprou durante um mes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{sgv_8h_aae98c0bab9ab0a238f67f5e93e0ffe83}{get\+Top\+Selled\+Products}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, int limit)
+\begin{DoxyCompactList}\small\item\em Criar uma lista com os N produtos mais vendidos durante um ano, indicando também o número de clientes e de unidades vendidas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{sgv_8h_abfcce3a4684414fe2a7b3087aca5f635}{get\+Cliente\+Top\+Profit\+Products}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}}, char $\ast$client\+ID, int limit)
+\begin{DoxyCompactList}\small\item\em Calcular a lista de produtos em que um cliente mais gastou dinheiro durante um ano. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{sgv_8h_aaffe33859fb3c04de2b1435f750abfad}{get\+Current\+Files\+Info}} (\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} \mbox{\hyperlink{structsgv}{sgv}})
+\begin{DoxyCompactList}\small\item\em Apresentar os resultados da leitura dos ficheiros que inicializaram o S\+GV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão do S\+GV e das queries 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sgv_8h_acc30bc95c49b5668c9ebb6b5db7d50bd}\label{sgv_8h_acc30bc95c49b5668c9ebb6b5db7d50bd}} 
+\index{sgv.h@{sgv.h}!closeQuery9@{closeQuery9}}
+\index{closeQuery9@{closeQuery9}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{closeQuery9()}{closeQuery9()}}
+{\footnotesize\ttfamily void close\+Query9 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}}}]{q }\end{DoxyParamCaption})}
+
+
+
+Elimina os resultados da Query 9. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & -\/ Resultados a ser eliminados \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sgv_8h_a6ff1f2a33466a9979ea075052eea9601}\label{sgv_8h_a6ff1f2a33466a9979ea075052eea9601}} 
+\index{sgv.h@{sgv.h}!destroySVG@{destroySVG}}
+\index{destroySVG@{destroySVG}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{destroySVG()}{destroySVG()}}
+{\footnotesize\ttfamily void destroy\+S\+VG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv }\end{DoxyParamCaption})}
+
+
+
+Elimina um S\+GV e os seus catalogos de memória. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV que irá ser eliminado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sgv_8h_abfcce3a4684414fe2a7b3087aca5f635}\label{sgv_8h_abfcce3a4684414fe2a7b3087aca5f635}} 
+\index{sgv.h@{sgv.h}!getClienteTopProfitProducts@{getClienteTopProfitProducts}}
+\index{getClienteTopProfitProducts@{getClienteTopProfitProducts}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getClienteTopProfitProducts()}{getClienteTopProfitProducts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Cliente\+Top\+Profit\+Products (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{client\+ID,  }\item[{int}]{limit }\end{DoxyParamCaption})}
+
+
+
+Calcular a lista de produtos em que um cliente mais gastou dinheiro durante um ano. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em client\+ID} & -\/ ID do cliente a analizar \\
+\hline
+{\em limit} & -\/ Número de produtos que devem ser apresentados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista dos produtos em que um cliente mais gastou dinheiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a091f3484337502c115fa43a7dc11adf3}\label{sgv_8h_a091f3484337502c115fa43a7dc11adf3}} 
+\index{sgv.h@{sgv.h}!getClientFavoriteProducts@{getClientFavoriteProducts}}
+\index{getClientFavoriteProducts@{getClientFavoriteProducts}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getClientFavoriteProducts()}{getClientFavoriteProducts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Client\+Favorite\+Products (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{client\+ID,  }\item[{int}]{month }\end{DoxyParamCaption})}
+
+
+
+Calcular a lista de produtos que um dado cliente mais comprou durante um mes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em client\+ID} & -\/ ID do cliente a analizar \\
+\hline
+{\em month} & -\/ Mês da compra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista dos produtos mais comprados por um cliente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a232a8da1e67d12fdc8a2dc584c5f7a57}\label{sgv_8h_a232a8da1e67d12fdc8a2dc584c5f7a57}} 
+\index{sgv.h@{sgv.h}!getClientsAndProductsNeverBoughtCount@{getClientsAndProductsNeverBoughtCount}}
+\index{getClientsAndProductsNeverBoughtCount@{getClientsAndProductsNeverBoughtCount}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getClientsAndProductsNeverBoughtCount()}{getClientsAndProductsNeverBoughtCount()}}
+{\footnotesize\ttfamily int$\ast$ get\+Clients\+And\+Products\+Never\+Bought\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv }\end{DoxyParamCaption})}
+
+
+
+Calcula o numero de clientes que nunca compraram nada e o numero de produtos nunca comprados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de ints com duas posicões com os resultados da query 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_addd753cc797d4d1b3ab49f273a568d87}\label{sgv_8h_addd753cc797d4d1b3ab49f273a568d87}} 
+\index{sgv.h@{sgv.h}!getClientsOfAllBranches@{getClientsOfAllBranches}}
+\index{getClientsOfAllBranches@{getClientsOfAllBranches}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getClientsOfAllBranches()}{getClientsOfAllBranches()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Clients\+Of\+All\+Branches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv }\end{DoxyParamCaption})}
+
+
+
+Calcula os clientes que fizeram compras em todas as Filiais. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de clientes que compraram em todas as filiais 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a95def56ec70f569220db88a3b4af8f14}\label{sgv_8h_a95def56ec70f569220db88a3b4af8f14}} 
+\index{sgv.h@{sgv.h}!getComprasQ9@{getComprasQ9}}
+\index{getComprasQ9@{getComprasQ9}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getComprasQ9()}{getComprasQ9()}}
+{\footnotesize\ttfamily int$\ast$ get\+Compras\+Q9 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}}}]{q }\end{DoxyParamCaption})}
+
+
+
+Lê o numero de compras por tipo resultantes da query 9 param q -\/ Resultado da query 9. 
+
+\begin{DoxyReturn}{Returns}
+Array de ints com o valor de compras N e P 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_aaffe33859fb3c04de2b1435f750abfad}\label{sgv_8h_aaffe33859fb3c04de2b1435f750abfad}} 
+\index{sgv.h@{sgv.h}!getCurrentFilesInfo@{getCurrentFilesInfo}}
+\index{getCurrentFilesInfo@{getCurrentFilesInfo}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getCurrentFilesInfo()}{getCurrentFilesInfo()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ get\+Current\+Files\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv }\end{DoxyParamCaption})}
+
+
+
+Apresentar os resultados da leitura dos ficheiros que inicializaram o S\+GV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de strings com a informacão relativa a cada ficheiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a739f3f5af43f06b20d5dba867768f316}\label{sgv_8h_a739f3f5af43f06b20d5dba867768f316}} 
+\index{sgv.h@{sgv.h}!getListaClientesQ9@{getListaClientesQ9}}
+\index{getListaClientesQ9@{getListaClientesQ9}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getListaClientesQ9()}{getListaClientesQ9()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Lista\+Clientes\+Q9 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}}}]{q }\end{DoxyParamCaption})}
+
+
+
+Retorna a Lista\+Clientes que será mostrada param q -\/ Resultado da query 9. 
+
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes a mostrar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a4c3c2e107bb15a09f5ac691e131f0db9}\label{sgv_8h_a4c3c2e107bb15a09f5ac691e131f0db9}} 
+\index{sgv.h@{sgv.h}!getProductBuyers@{getProductBuyers}}
+\index{getProductBuyers@{getProductBuyers}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getProductBuyers()}{getProductBuyers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sgv_8h_aa68c36dea5598830042e74b318b444b9}{Query9}} get\+Product\+Buyers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{product\+ID,  }\item[{int}]{branch }\end{DoxyParamCaption})}
+
+
+
+Calcular a lista de clientes que compraram um dado produto numa filial e quantas dessas compras eram Normais ou em Promocao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em product\+ID} & -\/ ID do produto que irá ser verificado \\
+\hline
+{\em branch} & -\/ Filial que se irá analizar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estrutura com a lista de clientes e os totais de compras (N ou P) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_ac3f9779ae003830c281bc523b11e52a3}\label{sgv_8h_ac3f9779ae003830c281bc523b11e52a3}} 
+\index{sgv.h@{sgv.h}!getProductSalesAndProfit@{getProductSalesAndProfit}}
+\index{getProductSalesAndProfit@{getProductSalesAndProfit}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getProductSalesAndProfit()}{getProductSalesAndProfit()}}
+{\footnotesize\ttfamily float$\ast$$\ast$ get\+Product\+Sales\+And\+Profit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{product\+ID,  }\item[{int}]{month }\end{DoxyParamCaption})}
+
+
+
+Calcula o numero total de vendas e o total faturado p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em product\+ID} & -\/ ID do produto \\
+\hline
+{\em month} & -\/ Mes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matriz de floats onde se encontra o Faturado(\+N e P) e o numero de registos(\+N e P) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a266f041cd62279ef90b911cb843f6bc3}\label{sgv_8h_a266f041cd62279ef90b911cb843f6bc3}} 
+\index{sgv.h@{sgv.h}!getProductsBoughtByClient@{getProductsBoughtByClient}}
+\index{getProductsBoughtByClient@{getProductsBoughtByClient}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getProductsBoughtByClient()}{getProductsBoughtByClient()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ get\+Products\+Bought\+By\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{client\+ID }\end{DoxyParamCaption})}
+
+
+
+Calcula o numero total de compras por mes em cada filial feito por um cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em client\+ID} & -\/ ID do cliente a pesquisar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de ints com os totais ordenados por mes e filial 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_ab9a939370f2041bd392f081ce95e9082}\label{sgv_8h_ab9a939370f2041bd392f081ce95e9082}} 
+\index{sgv.h@{sgv.h}!getProductsNeverBought@{getProductsNeverBought}}
+\index{getProductsNeverBought@{getProductsNeverBought}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getProductsNeverBought()}{getProductsNeverBought()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Products\+Never\+Bought (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{int}]{branch\+ID }\end{DoxyParamCaption})}
+
+
+
+Calcula os produtos que nunca foram comprados (Total ou numa Filial especifica) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em product\+ID} & -\/ ID da Filial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de produtos que nunca foram comprados 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a1d6f6910d496f1fe0fce5c11916960af}\label{sgv_8h_a1d6f6910d496f1fe0fce5c11916960af}} 
+\index{sgv.h@{sgv.h}!getProductsStartedByLetter@{getProductsStartedByLetter}}
+\index{getProductsStartedByLetter@{getProductsStartedByLetter}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getProductsStartedByLetter()}{getProductsStartedByLetter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Products\+Started\+By\+Letter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char}]{letter }\end{DoxyParamCaption})}
+
+
+
+Listagem com todos os produtos comecados por uma dada letra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em letter} & -\/ Letra fornecida pelo utilizador \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de produtos com os produtos comecados pela letra fornecida 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a6b0cb4e0113ef1d75eab026d0a6b1014}\label{sgv_8h_a6b0cb4e0113ef1d75eab026d0a6b1014}} 
+\index{sgv.h@{sgv.h}!getSalesAndProfit@{getSalesAndProfit}}
+\index{getSalesAndProfit@{getSalesAndProfit}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getSalesAndProfit()}{getSalesAndProfit()}}
+{\footnotesize\ttfamily long double$\ast$ get\+Sales\+And\+Profit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{int}]{min\+Month,  }\item[{int}]{max\+Month }\end{DoxyParamCaption})}
+
+
+
+Calcular o total de vendas e o total faturado entre dois meses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em min\+Month} & -\/ Limite inferior \\
+\hline
+{\em max\+Month} & -\/ Limite superior \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de long doubles o total faturado e o total de vendas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_aae98c0bab9ab0a238f67f5e93e0ffe83}\label{sgv_8h_aae98c0bab9ab0a238f67f5e93e0ffe83}} 
+\index{sgv.h@{sgv.h}!getTopSelledProducts@{getTopSelledProducts}}
+\index{getTopSelledProducts@{getTopSelledProducts}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getTopSelledProducts()}{getTopSelledProducts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Top\+Selled\+Products (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{int}]{limit }\end{DoxyParamCaption})}
+
+
+
+Criar uma lista com os N produtos mais vendidos durante um ano, indicando também o número de clientes e de unidades vendidas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com as estruturas de dados inicializadas \\
+\hline
+{\em limit} & -\/ Número de produtos que devem ser apresentados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista dos produtos mais comprados 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a37d50fe5570377b01151d349e9779595}\label{sgv_8h_a37d50fe5570377b01151d349e9779595}} 
+\index{sgv.h@{sgv.h}!getValoresFilesInfo@{getValoresFilesInfo}}
+\index{getValoresFilesInfo@{getValoresFilesInfo}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{getValoresFilesInfo()}{getValoresFilesInfo()}}
+{\footnotesize\ttfamily int$\ast$ get\+Valores\+Files\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv }\end{DoxyParamCaption})}
+
+
+
+Retorna informacão sobre os ficheiros abertos anteriormente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV com a informacão dos ficheiros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de inteiros com a informacão contida 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a14c3840c38c574667ca887b40c5250bb}\label{sgv_8h_a14c3840c38c574667ca887b40c5250bb}} 
+\index{sgv.h@{sgv.h}!initSGV@{initSGV}}
+\index{initSGV@{initSGV}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{initSGV()}{initSGV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} init\+S\+GV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializacão de um S\+GV. 
+
+\begin{DoxyReturn}{Returns}
+S\+GV vazio com todos os catálogos inicializados (também vazios) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sgv_8h_a08b500ce6a509d64af072a3946e2bbba}\label{sgv_8h_a08b500ce6a509d64af072a3946e2bbba}} 
+\index{sgv.h@{sgv.h}!loadSGVFromFiles@{loadSGVFromFiles}}
+\index{loadSGVFromFiles@{loadSGVFromFiles}!sgv.h@{sgv.h}}
+\doxysubsubsection{\texorpdfstring{loadSGVFromFiles()}{loadSGVFromFiles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}} load\+S\+G\+V\+From\+Files (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sgv_8h_a22f90d0d3126acbfb367c7d5dedbd6b7}{S\+GV}}}]{sgv,  }\item[{char $\ast$}]{dir\+Sales,  }\item[{char $\ast$}]{dir\+Prods,  }\item[{char $\ast$}]{dir\+Clnts }\end{DoxyParamCaption})}
+
+
+
+Carrega os ficheiros de vendas, produtos e clientes para o S\+GV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sgv} & -\/ S\+GV que irá ser carregado com a informacão dos 3 ficheiros \\
+\hline
+{\em dir\+Sales} & -\/ Diretorio onde se encontra o ficheiro de vendas a carregar \\
+\hline
+{\em dir\+Prods} & -\/ Diretorio onde se encontra o ficheiro de produtos a carregar \\
+\hline
+{\em dir\+Clnts} & -\/ Diretorio onde se encontra o ficheiro de clientes a carregar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+GV com a informacão carregada e validada 
+\end{DoxyReturn}

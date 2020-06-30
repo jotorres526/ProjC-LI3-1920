@@ -1,0 +1,170 @@
+\hypertarget{AVL_8h}{}\doxysection{include/\+A\+VL.h File Reference}
+\label{AVL_8h}\index{include/AVL.h@{include/AVL.h}}
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+Include dependency graph for A\+V\+L.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{d0/d8b/AVL_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/daf/AVL_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}\label{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}} 
+typedef struct \mbox{\hyperlink{structavl}{avl}} $\ast$ \mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}
+\begin{DoxyCompactList}\small\item\em Tipo de dados A\+VL \begin{quote}
+Aceita um int como chave \end{quote}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} \mbox{\hyperlink{AVL_8h_a43d61b3293a0ed52f7593bf674746cbc}{inicializa\+A\+VL}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma A\+VL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} \mbox{\hyperlink{AVL_8h_a2f298ace6a25666b28536b5a7d368eae}{insere\+A\+VL}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a, int node)
+\begin{DoxyCompactList}\small\item\em Insere um nodo numa A\+VL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{AVL_8h_abac290a801b754100d324bb235b1c33c}{procura\+A\+VL}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a, int node)
+\begin{DoxyCompactList}\small\item\em Procura um nodo numa A\+VL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} \mbox{\hyperlink{AVL_8h_a662b6e7968f245cc734662ee9d7e9a5f}{get\+Right}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a)
+\begin{DoxyCompactList}\small\item\em Avanca a A\+VL para a sub-\/árvore da direita. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} \mbox{\hyperlink{AVL_8h_a6ec29a510b755c7f6e12f2d18171f8f9}{get\+Left}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a)
+\begin{DoxyCompactList}\small\item\em Avanca a A\+VL para a sub-\/árvore da esquerda. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{AVL_8h_a0cb885271416559b8fce9b1a185fddf4}{get\+Node}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a)
+\begin{DoxyCompactList}\small\item\em Retorna o nodo da A\+VL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{AVL_8h_ac5aba015512f301c2d82b0b0bcc32449}{close\+A\+VL}} (\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} a)
+\begin{DoxyCompactList}\small\item\em Encerra uma A\+VL apagando-\/a de memória. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão do tipo A\+VL e das funcoes que a manipulam É a base do catálogo de produtos e de clientes 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{AVL_8h_ac5aba015512f301c2d82b0b0bcc32449}\label{AVL_8h_ac5aba015512f301c2d82b0b0bcc32449}} 
+\index{AVL.h@{AVL.h}!closeAVL@{closeAVL}}
+\index{closeAVL@{closeAVL}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{closeAVL()}{closeAVL()}}
+{\footnotesize\ttfamily void close\+A\+VL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Encerra uma A\+VL apagando-\/a de memória. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL a fechar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{AVL_8h_a6ec29a510b755c7f6e12f2d18171f8f9}\label{AVL_8h_a6ec29a510b755c7f6e12f2d18171f8f9}} 
+\index{AVL.h@{AVL.h}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{getLeft()}{getLeft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} get\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Avanca a A\+VL para a sub-\/árvore da esquerda. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL que se vai avancar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+VL da esquerda 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVL_8h_a0cb885271416559b8fce9b1a185fddf4}\label{AVL_8h_a0cb885271416559b8fce9b1a185fddf4}} 
+\index{AVL.h@{AVL.h}!getNode@{getNode}}
+\index{getNode@{getNode}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily int get\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Retorna o nodo da A\+VL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL que com o nodo a retornar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nodo raiz 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVL_8h_a662b6e7968f245cc734662ee9d7e9a5f}\label{AVL_8h_a662b6e7968f245cc734662ee9d7e9a5f}} 
+\index{AVL.h@{AVL.h}!getRight@{getRight}}
+\index{getRight@{getRight}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{getRight()}{getRight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} get\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Avanca a A\+VL para a sub-\/árvore da direita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL que se vai avancar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+VL da direita 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVL_8h_a43d61b3293a0ed52f7593bf674746cbc}\label{AVL_8h_a43d61b3293a0ed52f7593bf674746cbc}} 
+\index{AVL.h@{AVL.h}!inicializaAVL@{inicializaAVL}}
+\index{inicializaAVL@{inicializaAVL}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{inicializaAVL()}{inicializaAVL()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} inicializa\+A\+VL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma A\+VL. 
+
+\begin{DoxyReturn}{Returns}
+A\+VL vazia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVL_8h_a2f298ace6a25666b28536b5a7d368eae}\label{AVL_8h_a2f298ace6a25666b28536b5a7d368eae}} 
+\index{AVL.h@{AVL.h}!insereAVL@{insereAVL}}
+\index{insereAVL@{insereAVL}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{insereAVL()}{insereAVL()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}} insere\+A\+VL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a,  }\item[{int}]{node }\end{DoxyParamCaption})}
+
+
+
+Insere um nodo numa A\+VL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL onde irá ser inserido o novo elemento \\
+\hline
+{\em node} & -\/ Elemento a inserir na A\+VL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+VL com o novo elemento inserido corretamente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVL_8h_abac290a801b754100d324bb235b1c33c}\label{AVL_8h_abac290a801b754100d324bb235b1c33c}} 
+\index{AVL.h@{AVL.h}!procuraAVL@{procuraAVL}}
+\index{procuraAVL@{procuraAVL}!AVL.h@{AVL.h}}
+\doxysubsubsection{\texorpdfstring{procuraAVL()}{procuraAVL()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} procura\+A\+VL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVL_8h_a6a3f31095e094ee0ea8908ba5f8ac910}{A\+VL}}}]{a,  }\item[{int}]{node }\end{DoxyParamCaption})}
+
+
+
+Procura um nodo numa A\+VL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+VL onde irá ser efetuada a procura \\
+\hline
+{\em node} & -\/ Elemento a procurar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False se o nodo não existir ou True caso contrário 
+\end{DoxyReturn}

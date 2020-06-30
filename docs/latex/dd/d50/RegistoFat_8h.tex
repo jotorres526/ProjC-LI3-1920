@@ -1,0 +1,164 @@
+\hypertarget{RegistoFat_8h}{}\doxysection{include/\+Registo\+Fat.h File Reference}
+\label{RegistoFat_8h}\index{include/RegistoFat.h@{include/RegistoFat.h}}
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+Include dependency graph for Registo\+Fat.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{d1/d68/RegistoFat_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{d6/d11/RegistoFat_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}\label{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}} 
+typedef struct \mbox{\hyperlink{structregistoFat}{registo\+Fat}} $\ast$ \mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}
+\begin{DoxyCompactList}\small\item\em Definicão do tipo Registo\+Faturacao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} \mbox{\hyperlink{RegistoFat_8h_a89440397e6363bcf5df226737d05cf5d}{init\+Registo\+Faturacao}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa um registo de faturacão vazio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{RegistoFat_8h_ab9d2221ce278eb2dea24e57e3d1360c3}{aumenta\+Registo}} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} rf, float preco, int quant, int \mbox{\hyperlink{structfilial}{filial}}, int m, char np)
+\begin{DoxyCompactList}\small\item\em Dado um registo aumenta os valores do mesmo. \end{DoxyCompactList}\item 
+float $\ast$$\ast$ \mbox{\hyperlink{RegistoFat_8h_a3205e43059ed3b0fd96b31a851ebed85}{get\+Valores\+Registos}} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} rf, int \mbox{\hyperlink{myTypes_8h_a9d3b19e7e12e4faf169d55da6424fcfe}{mes}})
+\begin{DoxyCompactList}\small\item\em Calcula todos os valores de um registo num dado mes. \end{DoxyCompactList}\item 
+long double $\ast$ \mbox{\hyperlink{RegistoFat_8h_a5d28cdfb48248dcdc428cddd4212ad05}{vendas\+Faturado\+Registo}} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} rf, int min\+Month, int max\+Month)
+\begin{DoxyCompactList}\small\item\em Retorna o total faturado de um dado produto e o numero de vendas entre dois meses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFat_8h_ab7c25eae110e9209e5adf57a3802f272}\label{RegistoFat_8h_ab7c25eae110e9209e5adf57a3802f272}} 
+int {\bfseries get\+Reg\+Venda\+Prod\+Faturacao\+Aux} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} r, int branch)
+\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{RegistoFat_8h_a38f56a1101c7dbf7712b2657ce16e4b5}{is\+Comprado}} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} rf, int branch\+ID)
+\begin{DoxyCompactList}\small\item\em Verifica se um dado produto foi comprado numa dada filial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{RegistoFat_8h_aa60a41e11924eb78f12bafe2f034fc2a}{close\+Registo\+Faturacao}} (\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} rf)
+\begin{DoxyCompactList}\small\item\em Apaga de memória um Registo\+Faturcao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão da entidade Registo\+Faturacão e das funcões que o manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{RegistoFat_8h_ab9d2221ce278eb2dea24e57e3d1360c3}\label{RegistoFat_8h_ab9d2221ce278eb2dea24e57e3d1360c3}} 
+\index{RegistoFat.h@{RegistoFat.h}!aumentaRegisto@{aumentaRegisto}}
+\index{aumentaRegisto@{aumentaRegisto}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{aumentaRegisto()}{aumentaRegisto()}}
+{\footnotesize\ttfamily void aumenta\+Registo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}}]{rf,  }\item[{float}]{preco,  }\item[{int}]{quant,  }\item[{int}]{filial,  }\item[{int}]{m,  }\item[{char}]{np }\end{DoxyParamCaption})}
+
+
+
+Dado um registo aumenta os valores do mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rf} & -\/ Registo a ser alterado \\
+\hline
+{\em preco} & -\/ Valor em que irá ser aumentado o preco \\
+\hline
+{\em quant} & -\/ Quantidade que irá ser aumentada \\
+\hline
+{\em filial} & -\/ Numero da filial onde o produto foi vendido \\
+\hline
+{\em m} & -\/ Mes do registo da faturacao \\
+\hline
+{\em np} & -\/ Tipo de compra N ou P \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{RegistoFat_8h_aa60a41e11924eb78f12bafe2f034fc2a}\label{RegistoFat_8h_aa60a41e11924eb78f12bafe2f034fc2a}} 
+\index{RegistoFat.h@{RegistoFat.h}!closeRegistoFaturacao@{closeRegistoFaturacao}}
+\index{closeRegistoFaturacao@{closeRegistoFaturacao}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{closeRegistoFaturacao()}{closeRegistoFaturacao()}}
+{\footnotesize\ttfamily void close\+Registo\+Faturacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}}]{rf }\end{DoxyParamCaption})}
+
+
+
+Apaga de memória um Registo\+Faturcao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Registo\+Faturacao a apagar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{RegistoFat_8h_a3205e43059ed3b0fd96b31a851ebed85}\label{RegistoFat_8h_a3205e43059ed3b0fd96b31a851ebed85}} 
+\index{RegistoFat.h@{RegistoFat.h}!getValoresRegistos@{getValoresRegistos}}
+\index{getValoresRegistos@{getValoresRegistos}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{getValoresRegistos()}{getValoresRegistos()}}
+{\footnotesize\ttfamily float$\ast$$\ast$ get\+Valores\+Registos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}}]{rf,  }\item[{int}]{mes }\end{DoxyParamCaption})}
+
+
+
+Calcula todos os valores de um registo num dado mes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rf} & -\/ Registo que será analizado \\
+\hline
+{\em mes} & -\/ Mês onde será calculado os valores \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matriz com todos os valores de um dado registo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFat_8h_a89440397e6363bcf5df226737d05cf5d}\label{RegistoFat_8h_a89440397e6363bcf5df226737d05cf5d}} 
+\index{RegistoFat.h@{RegistoFat.h}!initRegistoFaturacao@{initRegistoFaturacao}}
+\index{initRegistoFaturacao@{initRegistoFaturacao}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{initRegistoFaturacao()}{initRegistoFaturacao()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}} init\+Registo\+Faturacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa um registo de faturacão vazio. 
+
+\begin{DoxyReturn}{Returns}
+Registo\+Faturacao vazio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFat_8h_a38f56a1101c7dbf7712b2657ce16e4b5}\label{RegistoFat_8h_a38f56a1101c7dbf7712b2657ce16e4b5}} 
+\index{RegistoFat.h@{RegistoFat.h}!isComprado@{isComprado}}
+\index{isComprado@{isComprado}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{isComprado()}{isComprado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} is\+Comprado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}}]{rf,  }\item[{int}]{branch\+ID }\end{DoxyParamCaption})}
+
+
+
+Verifica se um dado produto foi comprado numa dada filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rf} & -\/ Registo que será analizado \\
+\hline
+{\em branch\+ID} & -\/ ID da branch que se quer verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se tiver sido comprado, False caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFat_8h_a5d28cdfb48248dcdc428cddd4212ad05}\label{RegistoFat_8h_a5d28cdfb48248dcdc428cddd4212ad05}} 
+\index{RegistoFat.h@{RegistoFat.h}!vendasFaturadoRegisto@{vendasFaturadoRegisto}}
+\index{vendasFaturadoRegisto@{vendasFaturadoRegisto}!RegistoFat.h@{RegistoFat.h}}
+\doxysubsubsection{\texorpdfstring{vendasFaturadoRegisto()}{vendasFaturadoRegisto()}}
+{\footnotesize\ttfamily long double$\ast$ vendas\+Faturado\+Registo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFat_8h_a19a38bd3130982c48b693bb5fbd163f8}{Registo\+Faturacao}}}]{rf,  }\item[{int}]{min\+Month,  }\item[{int}]{max\+Month }\end{DoxyParamCaption})}
+
+
+
+Retorna o total faturado de um dado produto e o numero de vendas entre dois meses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rf} & -\/ Registo que será analizado \\
+\hline
+{\em min\+Month} & -\/ Limite inferior \\
+\hline
+{\em max\+Month} & -\/ Limite superior \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array de long doubles com o total faturado de um produto e o total de vendas 
+\end{DoxyReturn}

@@ -1,0 +1,131 @@
+\hypertarget{produto_8h}{}\doxysection{include/produto.h File Reference}
+\label{produto_8h}\index{include/produto.h@{include/produto.h}}
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+Include dependency graph for produto.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{d8/d81/produto_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d72/produto_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}\label{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}} 
+typedef struct \mbox{\hyperlink{structprod}{prod}} $\ast$ \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}
+\begin{DoxyCompactList}\small\item\em Definicão do tipo Produto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} \mbox{\hyperlink{produto_8h_afabaf738db6f82f2c1833924eabe6246}{cria\+Prod}} (char $\ast$cod\+Prod)
+\begin{DoxyCompactList}\small\item\em Cria um produto com um dado código. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{produto_8h_abf6f7d3b7d7f85f51588ed79d640bcdd}{is\+Valid\+Prod}} (\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} sp)
+\begin{DoxyCompactList}\small\item\em Verifica se um Produto é válido. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produto_8h_a66b5ddaf4f54ed111572a58ed41660c3}{compare\+Produto}} (\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p1, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p2)
+\begin{DoxyCompactList}\small\item\em Compara dois produtos alfabéticamente. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{produto_8h_a08c08f020dfa64f510af4fa8b91cd0ec}{get\+Cod\+Prod}} (\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Retorna o código de um produto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produto_8h_af7cb7bdfb4975b223eea20d7abf70356}{close\+Produto}} (\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p)
+\begin{DoxyCompactList}\small\item\em Apaga de memória um produto e o seu código. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão da entidade produto e das funcões que a manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{produto_8h_af7cb7bdfb4975b223eea20d7abf70356}\label{produto_8h_af7cb7bdfb4975b223eea20d7abf70356}} 
+\index{produto.h@{produto.h}!closeProduto@{closeProduto}}
+\index{closeProduto@{closeProduto}!produto.h@{produto.h}}
+\doxysubsubsection{\texorpdfstring{closeProduto()}{closeProduto()}}
+{\footnotesize\ttfamily void close\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Apaga de memória um produto e o seu código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ Produto a apagar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{produto_8h_a66b5ddaf4f54ed111572a58ed41660c3}\label{produto_8h_a66b5ddaf4f54ed111572a58ed41660c3}} 
+\index{produto.h@{produto.h}!compareProduto@{compareProduto}}
+\index{compareProduto@{compareProduto}!produto.h@{produto.h}}
+\doxysubsubsection{\texorpdfstring{compareProduto()}{compareProduto()}}
+{\footnotesize\ttfamily int compare\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p1,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Compara dois produtos alfabéticamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & -\/ Primeiro produto \\
+\hline
+{\em p2} & -\/ Segundo produto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se forem iguais; maior do que 0 se p2 for maior que p1; menor do que 0 caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{produto_8h_afabaf738db6f82f2c1833924eabe6246}\label{produto_8h_afabaf738db6f82f2c1833924eabe6246}} 
+\index{produto.h@{produto.h}!criaProd@{criaProd}}
+\index{criaProd@{criaProd}!produto.h@{produto.h}}
+\doxysubsubsection{\texorpdfstring{criaProd()}{criaProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} cria\+Prod (\begin{DoxyParamCaption}\item[{char $\ast$}]{cod\+Prod }\end{DoxyParamCaption})}
+
+
+
+Cria um produto com um dado código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod\+Prod} & -\/ Código do produto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Produto registado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{produto_8h_a08c08f020dfa64f510af4fa8b91cd0ec}\label{produto_8h_a08c08f020dfa64f510af4fa8b91cd0ec}} 
+\index{produto.h@{produto.h}!getCodProd@{getCodProd}}
+\index{getCodProd@{getCodProd}!produto.h@{produto.h}}
+\doxysubsubsection{\texorpdfstring{getCodProd()}{getCodProd()}}
+{\footnotesize\ttfamily char$\ast$ get\+Cod\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Retorna o código de um produto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ Produto que será extraido o código \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Código de produto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{produto_8h_abf6f7d3b7d7f85f51588ed79d640bcdd}\label{produto_8h_abf6f7d3b7d7f85f51588ed79d640bcdd}} 
+\index{produto.h@{produto.h}!isValidProd@{isValidProd}}
+\index{isValidProd@{isValidProd}!produto.h@{produto.h}}
+\doxysubsubsection{\texorpdfstring{isValidProd()}{isValidProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} is\+Valid\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{sp }\end{DoxyParamCaption})}
+
+
+
+Verifica se um Produto é válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & -\/ Produto a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se for válido, False caso contrário 
+\end{DoxyReturn}

@@ -1,0 +1,221 @@
+\hypertarget{filial_8h}{}\doxysection{include/filial.h File Reference}
+\label{filial_8h}\index{include/filial.h@{include/filial.h}}
+{\ttfamily \#include \char`\"{}cliente.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cat\+Clientes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}produto.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Registo\+Filial.\+h\char`\"{}}\newline
+Include dependency graph for filial.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d44/filial_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{d9/db4/filial_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{filial_8h_a08bf744062f8cfbf865e9226b00f0921}\label{filial_8h_a08bf744062f8cfbf865e9226b00f0921}} 
+typedef struct \mbox{\hyperlink{structfilial}{filial}} $\ast$ \mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}
+\begin{DoxyCompactList}\small\item\em definição do tipo Filial \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} \mbox{\hyperlink{filial_8h_a7bdae2d34ae3bb778cd6b61d2b0f5b92}{init\+Filial}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma filial vazia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} \mbox{\hyperlink{filial_8h_af17dac798e6c74b6454e5fe795c4def3}{insere\+Cliente\+Filial}} (\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c, \mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f)
+\begin{DoxyCompactList}\small\item\em Insere um cliente na estrutura da filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} \mbox{\hyperlink{filial_8h_ad915e77dfa83d8212f050e17e8a54b9e}{insere\+Registo\+Filial}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} \mbox{\hyperlink{structprod}{prod}}, int q, char modo, int \mbox{\hyperlink{myTypes_8h_a9d3b19e7e12e4faf169d55da6424fcfe}{mes}})
+\begin{DoxyCompactList}\small\item\em Insere um registo na lista de registos filial, dados os parametros, num cliente da filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{filial_8h_a71af9f821fe2cdceea06b900314ff3fa}{get\+Compradores\+Filial}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f)
+\begin{DoxyCompactList}\small\item\em Procura todos os clientes que compraram pelo menos um produto na filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{filial_8h_ab1757e74810f433f0f403843f224e420}{get\+Nao\+Compradores\+Filial}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f)
+\begin{DoxyCompactList}\small\item\em Procura os clientes que nao compraram na filial. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{filial_8h_a5e7158cae393c6e54a7e3457510a303a}{get\+Registos\+Cliente}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, char $\ast$cod\+Cliente)
+\begin{DoxyCompactList}\small\item\em Percorre a filial à procura dos registos do cliente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{filial_8h_adb1a06852d2b462fa39d6f3947ef9d46}{clientes\+Produto}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p, int $\ast$compN, int $\ast$compP)
+\begin{DoxyCompactList}\small\item\em Procura os clientes que compraram o produto p na filial f. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{filial_8h_a3e2448df51f7800adaae9617a67ba568}{get\+Lista\+Registos\+Filial\+Cliente\+Mes}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, \mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}} c, \mbox{\hyperlink{myTypes_8h_a6946ab849beb844fc3aa9584e6a66b68}{Mes}} m)
+\begin{DoxyCompactList}\small\item\em Procura os registos feitos pelo cliente neste mes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{filial_8h_abb953ff16f7ff1568f987d5a4fe93ecc}\label{filial_8h_abb953ff16f7ff1568f987d5a4fe93ecc}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{filial_8h_abb953ff16f7ff1568f987d5a4fe93ecc}{get\+Top\+N\+Prods\+Filial}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} main\+List)
+\begin{DoxyCompactList}\small\item\em Utilizada para a query 11, mas nao funciona. Deveria retornar os registos dos N produtos mais comprados. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{filial_8h_abfb04b7a81743e0f2a654c87936addc5}\label{filial_8h_abfb04b7a81743e0f2a654c87936addc5}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{filial_8h_abfb04b7a81743e0f2a654c87936addc5}{get\+Cliente\+Top\+Profit\+Products\+Filial}} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f, char $\ast$client\+ID)
+\begin{DoxyCompactList}\small\item\em Utilizada para a query 12, mas nao funciona. Deveria retornar os regitos do cliente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{filial_8h_ab4d91ee3db494f579a50e798bc6a70dd}\label{filial_8h_ab4d91ee3db494f579a50e798bc6a70dd}} 
+void {\bfseries close\+Filial} (\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão da entidade filial e das funcões que a manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{filial_8h_adb1a06852d2b462fa39d6f3947ef9d46}\label{filial_8h_adb1a06852d2b462fa39d6f3947ef9d46}} 
+\index{filial.h@{filial.h}!clientesProduto@{clientesProduto}}
+\index{clientesProduto@{clientesProduto}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{clientesProduto()}{clientesProduto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} clientes\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p,  }\item[{int $\ast$}]{compN,  }\item[{int $\ast$}]{compP }\end{DoxyParamCaption})}
+
+
+
+Procura os clientes que compraram o produto p na filial f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde se procura \\
+\hline
+{\em p} & -\/ Produto que se procura \\
+\hline
+{\em compN} & -\/ apontador para as compras que se fez pelo método N \\
+\hline
+{\em compP} & -\/ apontador para as compras que se fez pelo método P \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes que compraram o produto p 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_a71af9f821fe2cdceea06b900314ff3fa}\label{filial_8h_a71af9f821fe2cdceea06b900314ff3fa}} 
+\index{filial.h@{filial.h}!getCompradoresFilial@{getCompradoresFilial}}
+\index{getCompradoresFilial@{getCompradoresFilial}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{getCompradoresFilial()}{getCompradoresFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Compradores\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Procura todos os clientes que compraram pelo menos um produto na filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde se vai procurar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+C\+Lientes com os clientes que compraram pelo menos um produto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_a3e2448df51f7800adaae9617a67ba568}\label{filial_8h_a3e2448df51f7800adaae9617a67ba568}} 
+\index{filial.h@{filial.h}!getListaRegistosFilialClienteMes@{getListaRegistosFilialClienteMes}}
+\index{getListaRegistosFilialClienteMes@{getListaRegistosFilialClienteMes}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{getListaRegistosFilialClienteMes()}{getListaRegistosFilialClienteMes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} get\+Lista\+Registos\+Filial\+Cliente\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c,  }\item[{\mbox{\hyperlink{myTypes_8h_a6946ab849beb844fc3aa9584e6a66b68}{Mes}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Procura os registos feitos pelo cliente neste mes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde se procura os registos \\
+\hline
+{\em c} & -\/ Cliente que se procura na filial \\
+\hline
+{\em mes} & -\/ Mês que se vai registar as compras feitas pelo cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registos\+Filial dos registos feitos no mes recebido como parametro pelo cliente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_ab1757e74810f433f0f403843f224e420}\label{filial_8h_ab1757e74810f433f0f403843f224e420}} 
+\index{filial.h@{filial.h}!getNaoCompradoresFilial@{getNaoCompradoresFilial}}
+\index{getNaoCompradoresFilial@{getNaoCompradoresFilial}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{getNaoCompradoresFilial()}{getNaoCompradoresFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} get\+Nao\+Compradores\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Procura os clientes que nao compraram na filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde se vai procurar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes com os clientes que nao compraram nesta filial 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_a5e7158cae393c6e54a7e3457510a303a}\label{filial_8h_a5e7158cae393c6e54a7e3457510a303a}} 
+\index{filial.h@{filial.h}!getRegistosCliente@{getRegistosCliente}}
+\index{getRegistosCliente@{getRegistosCliente}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{getRegistosCliente()}{getRegistosCliente()}}
+{\footnotesize\ttfamily int$\ast$ get\+Registos\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f,  }\item[{char $\ast$}]{cod\+Cliente }\end{DoxyParamCaption})}
+
+
+
+Percorre a filial à procura dos registos do cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde se vai procurar os registos do cliente \\
+\hline
+{\em cod\+Cliente} & -\/ String com o codigo do cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ array de tamanho 12 em que cada posiçao corresponde às compras do cliente num certo mês 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_a7bdae2d34ae3bb778cd6b61d2b0f5b92}\label{filial_8h_a7bdae2d34ae3bb778cd6b61d2b0f5b92}} 
+\index{filial.h@{filial.h}!initFilial@{initFilial}}
+\index{initFilial@{initFilial}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{initFilial()}{initFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} init\+Filial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma filial vazia. 
+
+\begin{DoxyReturn}{Returns}
+Filial vazia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_af17dac798e6c74b6454e5fe795c4def3}\label{filial_8h_af17dac798e6c74b6454e5fe795c4def3}} 
+\index{filial.h@{filial.h}!insereClienteFilial@{insereClienteFilial}}
+\index{insereClienteFilial@{insereClienteFilial}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{insereClienteFilial()}{insereClienteFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} insere\+Cliente\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c,  }\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f }\end{DoxyParamCaption})}
+
+
+
+Insere um cliente na estrutura da filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Cliente a inserir na filial \\
+\hline
+{\em f} & -\/ Filial onde se irá inserir o cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Filial com o cliente inserido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{filial_8h_ad915e77dfa83d8212f050e17e8a54b9e}\label{filial_8h_ad915e77dfa83d8212f050e17e8a54b9e}} 
+\index{filial.h@{filial.h}!insereRegistoFilial@{insereRegistoFilial}}
+\index{insereRegistoFilial@{insereRegistoFilial}!filial.h@{filial.h}}
+\doxysubsubsection{\texorpdfstring{insereRegistoFilial()}{insereRegistoFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}} insere\+Registo\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{filial_8h_a08bf744062f8cfbf865e9226b00f0921}{Filial}}}]{f,  }\item[{\mbox{\hyperlink{cliente_8h_ab461f7b3d6d67226255f032504d6d2b9}{Cliente}}}]{c,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{prod,  }\item[{int}]{q,  }\item[{char}]{modo,  }\item[{int}]{mes }\end{DoxyParamCaption})}
+
+
+
+Insere um registo na lista de registos filial, dados os parametros, num cliente da filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ Filial onde está o cliente onde se vai inserir o registo \\
+\hline
+{\em c} & -\/ Cliente onde se vai inserir o registo \\
+\hline
+{\em q} & -\/ Valor de quantidade do registo filial \\
+\hline
+{\em modo} & -\/ Tipo de compra do registo filial \\
+\hline
+{\em mes} & -\/ Mes do registo da filial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Filial atualizada 
+\end{DoxyReturn}

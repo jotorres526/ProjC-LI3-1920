@@ -1,0 +1,269 @@
+\hypertarget{AVLRegistos_8h}{}\doxysection{include/\+A\+V\+L\+Registos.h File Reference}
+\label{AVLRegistos_8h}\index{include/AVLRegistos.h@{include/AVLRegistos.h}}
+{\ttfamily \#include \char`\"{}Registo\+Fat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cat\+Prods.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Registo\+Filial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cat\+Clientes.\+h\char`\"{}}\newline
+Include dependency graph for A\+V\+L\+Registos.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d20/AVLRegistos_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}\label{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}} 
+typedef struct \mbox{\hyperlink{structavlRegistos}{avl\+Registos}} $\ast$ \mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}
+\begin{DoxyCompactList}\small\item\em Definicão do tipo A\+V\+L\+Registos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} \mbox{\hyperlink{AVLRegistos_8h_a9cc80f2dd7229d19c8861ad7395d8fb3}{init\+A\+V\+L\+Registos}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma A\+V\+L\+Registos vazia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} \mbox{\hyperlink{AVLRegistos_8h_af4df78d0525ccff9c13f59c2b32a9738}{insere\+A\+V\+L\+Registos}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a, int key, void $\ast$rf)
+\begin{DoxyCompactList}\small\item\em Adiciona um nodo, que contém um registo, à A\+V\+L\+Registos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{AVLRegistos_8h_a0de53f6c093387ca6ae3cc9b747eb474}{adiciona\+Registo\+Filial\+A\+VL}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a, int key, void $\ast$registo)
+\begin{DoxyCompactList}\small\item\em Dada uma A\+V\+L\+Registos, uma key e um Registo\+Filial adiciona o registo à Lista\+Registos\+Filial do nodo. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{AVLRegistos_8h_ab346af88c2dc1d074fe6d2a0d3632fd9}{procura\+Registo}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a, int key)
+\begin{DoxyCompactList}\small\item\em Dada uma A\+V\+L\+Registos e uma key retorna o registo associado ao nodo. \end{DoxyCompactList}\item 
+long double $\ast$ \mbox{\hyperlink{AVLRegistos_8h_ac9af536dbbcd93a4624c82a88905bb1d}{fat\+And\+Num\+Vendas}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a, int min\+Month, int max\+Month)
+\begin{DoxyCompactList}\small\item\em Calcula o total faturado e o numero de vendas que houve entre dois meses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{AVLRegistos_8h_a18199f8a863ce2395ab5358f1e29525c}\label{AVLRegistos_8h_a18199f8a863ce2395ab5358f1e29525c}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} {\bfseries get\+Top\+N\+Produtos\+A\+V\+L\+Registos} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} main\+List)
+\item 
+\mbox{\Hypertarget{AVLRegistos_8h_af5574bcf90b6282925f5724381b71433}\label{AVLRegistos_8h_af5574bcf90b6282925f5724381b71433}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} {\bfseries aumenta\+Ou\+Swap\+Ord\+L\+Reg\+Filial} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} main\+Lista, \mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}} r)
+\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{AVLRegistos_8h_a1fbc9313f297f80a816b9d48ab24cb19}{produtos\+Nao\+Comprados}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} ar, \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} lp, int branch\+ID, char l1, char l2)
+\begin{DoxyCompactList}\small\item\em Procura todos os Produto que não foram comprados em todo ano em nenhuma Filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{AVLRegistos_8h_ab49e7cb2c44649c79e22975920c7e8f1}{clientes\+Compradores}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} ar, \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc, char l)
+\begin{DoxyCompactList}\small\item\em Lista\+Clientes que compraram algo em pelo menos uma Filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{AVLRegistos_8h_af7011fa0082c1481fc779214fbf4b72b}{clientes\+Nao\+Compradores}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} ar, \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc, char l)
+\begin{DoxyCompactList}\small\item\em Lista\+Clientes que não compraram nada em nenhuma Filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} \mbox{\hyperlink{AVLRegistos_8h_a16597a0a75784189515faceaa6e1b7c4}{procura\+Compradores\+Produto}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} ar, \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} lc, char l, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p, int $\ast$compN, int $\ast$compP)
+\begin{DoxyCompactList}\small\item\em Encontra todos os Cliente que compraram o Produto p. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{AVLRegistos_8h_a84ffd652e74d1d228d84cf587dbe4509}{close\+A\+V\+L\+Faturacao}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a)
+\begin{DoxyCompactList}\small\item\em Limpa de memória uma A\+V\+L\+Registos da Faturacao. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{AVLRegistos_8h_a16e39504031d495451a72e26690009f5}{close\+A\+V\+L\+Filial}} (\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} a)
+\begin{DoxyCompactList}\small\item\em Limpa de memória uma A\+V\+L\+Registos de uma Filial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definicão do tipo A\+V\+L\+Registas e das funcoes que a manipulam É a base do catálogo das filiais e da faturacao A diferenca para a A\+VL é que aqui guarda tambem um registo alem do nodo No caso de ser usado para faturacao o registo é um Registo\+Faturacao No caso de ser usado para filial o registo é uma Lista\+Registos\+Filial 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{AVLRegistos_8h_a0de53f6c093387ca6ae3cc9b747eb474}\label{AVLRegistos_8h_a0de53f6c093387ca6ae3cc9b747eb474}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!adicionaRegistoFilialAVL@{adicionaRegistoFilialAVL}}
+\index{adicionaRegistoFilialAVL@{adicionaRegistoFilialAVL}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{adicionaRegistoFilialAVL()}{adicionaRegistoFilialAVL()}}
+{\footnotesize\ttfamily void adiciona\+Registo\+Filial\+A\+VL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a,  }\item[{int}]{key,  }\item[{void $\ast$}]{registo }\end{DoxyParamCaption})}
+
+
+
+Dada uma A\+V\+L\+Registos, uma key e um Registo\+Filial adiciona o registo à Lista\+Registos\+Filial do nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+V\+L\+Registos onde irá ser adicionado o registo \\
+\hline
+{\em key} & -\/ Chave do nodo onde será adicionado o registo \\
+\hline
+{\em registo} & -\/ Registo que será adicionado à lista de registos do nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{AVLRegistos_8h_ab49e7cb2c44649c79e22975920c7e8f1}\label{AVLRegistos_8h_ab49e7cb2c44649c79e22975920c7e8f1}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!clientesCompradores@{clientesCompradores}}
+\index{clientesCompradores@{clientesCompradores}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{clientesCompradores()}{clientesCompradores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} clientes\+Compradores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{ar,  }\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc,  }\item[{char}]{l }\end{DoxyParamCaption})}
+
+
+
+Lista\+Clientes que compraram algo em pelo menos uma Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & -\/ A\+V\+L\+Registos(\+Filial) onde irá ser procurado os Cliente compradores \\
+\hline
+{\em lc} & -\/ Lista\+Clientes onde será construido o resultado final após iteracões sobre o catálogo da Filial \\
+\hline
+{\em l} & -\/ Primeira letra do cliente que serve para construir o cliente antes de adicionar à lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes ordenada com os Cliente compradores 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_af7011fa0082c1481fc779214fbf4b72b}\label{AVLRegistos_8h_af7011fa0082c1481fc779214fbf4b72b}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!clientesNaoCompradores@{clientesNaoCompradores}}
+\index{clientesNaoCompradores@{clientesNaoCompradores}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{clientesNaoCompradores()}{clientesNaoCompradores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} clientes\+Nao\+Compradores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{ar,  }\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc,  }\item[{char}]{l }\end{DoxyParamCaption})}
+
+
+
+Lista\+Clientes que não compraram nada em nenhuma Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & -\/ A\+V\+L\+Registos(\+Filial) onde irá ser procurado os Cliente que nada compraram \\
+\hline
+{\em lc} & -\/ Lista\+Clientes onde será construido o resultado final após iteracões sobre o catálogo da Filial \\
+\hline
+{\em l} & -\/ Primeira letra do cliente que serve para construir o cliente antes de adicionar à lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes ordenada com os Cliente não compradores 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_a84ffd652e74d1d228d84cf587dbe4509}\label{AVLRegistos_8h_a84ffd652e74d1d228d84cf587dbe4509}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!closeAVLFaturacao@{closeAVLFaturacao}}
+\index{closeAVLFaturacao@{closeAVLFaturacao}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{closeAVLFaturacao()}{closeAVLFaturacao()}}
+{\footnotesize\ttfamily void close\+A\+V\+L\+Faturacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Limpa de memória uma A\+V\+L\+Registos da Faturacao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+V\+L\+Registos que será apagada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{AVLRegistos_8h_a16e39504031d495451a72e26690009f5}\label{AVLRegistos_8h_a16e39504031d495451a72e26690009f5}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!closeAVLFilial@{closeAVLFilial}}
+\index{closeAVLFilial@{closeAVLFilial}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{closeAVLFilial()}{closeAVLFilial()}}
+{\footnotesize\ttfamily void close\+A\+V\+L\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Limpa de memória uma A\+V\+L\+Registos de uma Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+V\+L\+Registos que será apagada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{AVLRegistos_8h_ac9af536dbbcd93a4624c82a88905bb1d}\label{AVLRegistos_8h_ac9af536dbbcd93a4624c82a88905bb1d}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!fatAndNumVendas@{fatAndNumVendas}}
+\index{fatAndNumVendas@{fatAndNumVendas}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{fatAndNumVendas()}{fatAndNumVendas()}}
+{\footnotesize\ttfamily long double$\ast$ fat\+And\+Num\+Vendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a,  }\item[{int}]{min\+Month,  }\item[{int}]{max\+Month }\end{DoxyParamCaption})}
+
+
+
+Calcula o total faturado e o numero de vendas que houve entre dois meses. 
+
+\begin{DoxyReturn}{Returns}
+Array de long double onde o primeiro elemento é o numero de vendas e o segundo é o total faturado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_a9cc80f2dd7229d19c8861ad7395d8fb3}\label{AVLRegistos_8h_a9cc80f2dd7229d19c8861ad7395d8fb3}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!initAVLRegistos@{initAVLRegistos}}
+\index{initAVLRegistos@{initAVLRegistos}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{initAVLRegistos()}{initAVLRegistos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} init\+A\+V\+L\+Registos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa uma A\+V\+L\+Registos vazia. 
+
+\begin{DoxyReturn}{Returns}
+A\+V\+L\+Registos vazia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_af4df78d0525ccff9c13f59c2b32a9738}\label{AVLRegistos_8h_af4df78d0525ccff9c13f59c2b32a9738}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!insereAVLRegistos@{insereAVLRegistos}}
+\index{insereAVLRegistos@{insereAVLRegistos}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{insereAVLRegistos()}{insereAVLRegistos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}} insere\+A\+V\+L\+Registos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a,  }\item[{int}]{key,  }\item[{void $\ast$}]{rf }\end{DoxyParamCaption})}
+
+
+
+Adiciona um nodo, que contém um registo, à A\+V\+L\+Registos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+V\+L\+Registos onde será inserido o nodo \\
+\hline
+{\em node} & -\/ Nodo que será inserido (serve como chave de procura) \\
+\hline
+{\em rf} & -\/ Registo que estará associado a um nodo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+V\+L\+Registos com o novo nodo inserido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_a16597a0a75784189515faceaa6e1b7c4}\label{AVLRegistos_8h_a16597a0a75784189515faceaa6e1b7c4}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!procuraCompradoresProduto@{procuraCompradoresProduto}}
+\index{procuraCompradoresProduto@{procuraCompradoresProduto}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{procuraCompradoresProduto()}{procuraCompradoresProduto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}} procura\+Compradores\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{ar,  }\item[{\mbox{\hyperlink{catClientes_8h_a458475d83f97d37668b38ffcbc3545ab}{Lista\+Clientes}}}]{lc,  }\item[{char}]{l,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p,  }\item[{int $\ast$}]{compN,  }\item[{int $\ast$}]{compP }\end{DoxyParamCaption})}
+
+
+
+Encontra todos os Cliente que compraram o Produto p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & -\/ A\+V\+L\+Registos(\+Filial) onde irá ser procurado os Cliente que compraram o Produto p \\
+\hline
+{\em lc} & -\/ Lista\+Clientes onde será construido o resultado final após iteracões sobre o catálogo da Filial \\
+\hline
+{\em l} & -\/ Primeira letra do Cliente que serve para construir o mesmo antes de adicionar à lista \\
+\hline
+{\em p} & -\/ Produto que se quer verificar por quem foi comprado \\
+\hline
+{\em compN} & -\/ Numero de compras do tipo N que é incrementado \\
+\hline
+{\em compP} & -\/ Numero de compras do tipo P que é incrementado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Clientes ordenada com todos os Cliente que compraram o Produto p 
+\end{DoxyReturn}
+\mbox{\Hypertarget{AVLRegistos_8h_ab346af88c2dc1d074fe6d2a0d3632fd9}\label{AVLRegistos_8h_ab346af88c2dc1d074fe6d2a0d3632fd9}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!procuraRegisto@{procuraRegisto}}
+\index{procuraRegisto@{procuraRegisto}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{procuraRegisto()}{procuraRegisto()}}
+{\footnotesize\ttfamily void$\ast$ procura\+Registo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{a,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Dada uma A\+V\+L\+Registos e uma key retorna o registo associado ao nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ A\+V\+L\+Registos onde irá ser procurado o registo \\
+\hline
+{\em key} & -\/ Chave do nodo onde se encontra o registo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{AVLRegistos_8h_a1fbc9313f297f80a816b9d48ab24cb19}\label{AVLRegistos_8h_a1fbc9313f297f80a816b9d48ab24cb19}} 
+\index{AVLRegistos.h@{AVLRegistos.h}!produtosNaoComprados@{produtosNaoComprados}}
+\index{produtosNaoComprados@{produtosNaoComprados}!AVLRegistos.h@{AVLRegistos.h}}
+\doxysubsubsection{\texorpdfstring{produtosNaoComprados()}{produtosNaoComprados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} produtos\+Nao\+Comprados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{AVLRegistos_8h_a0f865698ca0ef2f103848de2b2cc6508}{A\+V\+L\+Registos}}}]{ar,  }\item[{\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}}}]{lp,  }\item[{int}]{branch\+ID,  }\item[{char}]{l1,  }\item[{char}]{l2 }\end{DoxyParamCaption})}
+
+
+
+Procura todos os Produto que não foram comprados em todo ano em nenhuma Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & -\/ A\+V\+L\+Registos(\+Faturacao) onde será procurado os Produto não comprados \\
+\hline
+{\em lp} & -\/ Lista\+Prods que será usada para construir o resultado final de todos os catálogos de Faturacao \\
+\hline
+{\em branch\+ID} & -\/ Numero da Filial que queremos avaliar. Se for 0 é uma procura da Faturacao global \\
+\hline
+{\em l1} & -\/ Primeira letra de um código de Produto para construir o produto que será adicionado à Lista\+Prods \\
+\hline
+{\em l2} & -\/ Segunda letra de um código de Produto para construir o produto que será adicionado à Lista\+Prods \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Prods ordenada com os Produto que não foram comprados 
+\end{DoxyReturn}

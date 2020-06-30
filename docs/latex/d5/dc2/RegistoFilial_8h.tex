@@ -1,0 +1,261 @@
+\hypertarget{RegistoFilial_8h}{}\doxysection{include/\+Registo\+Filial.h File Reference}
+\label{RegistoFilial_8h}\index{include/RegistoFilial.h@{include/RegistoFilial.h}}
+{\ttfamily \#include \char`\"{}produto.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cat\+Prods.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Types.\+h\char`\"{}}\newline
+Include dependency graph for Registo\+Filial.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{d7/dcc/RegistoFilial_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{d4/d93/RegistoFilial_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}\label{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}} 
+typedef struct \mbox{\hyperlink{structregistoFilial}{registo\+Filial}} $\ast$ \mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}}
+\begin{DoxyCompactList}\small\item\em Definição do tipo Registo\+Filial. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}\label{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}} 
+typedef struct \mbox{\hyperlink{structlistaRegistosFilial}{lista\+Registos\+Filial}} $\ast$ \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}
+\begin{DoxyCompactList}\small\item\em Definição do tipo Lista\+Registo\+Filial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_afd8bd0f71fd9f792f4104883f0f5fca3}{cria\+Registo\+Filial}} (\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} \mbox{\hyperlink{structprod}{prod}}, int q, char modo, int \mbox{\hyperlink{myTypes_8h_a9d3b19e7e12e4faf169d55da6424fcfe}{mes}})
+\begin{DoxyCompactList}\small\item\em Cria um registo filial dado os parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_a44054d7ba76105ec353c9be5b36ccab4}{cons\+Lista\+Registos\+Filial}} (\mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}} r, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Insere um registo filial na cabeça duma lista de registos de filial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_adde514791a3e44853ec79dccb5f13d2c}{concat\+Lista\+Registos\+Filial}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} l1, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} l2)
+\begin{DoxyCompactList}\small\item\em Concatena duas listas de Registos Filial. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFilial_8h_a565744e83127e363aebf89f5887a15a2}\label{RegistoFilial_8h_a565744e83127e363aebf89f5887a15a2}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_a565744e83127e363aebf89f5887a15a2}{insere\+Registo\+Lista\+N\+Comp}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lfinal, int size, int $\ast$n\+\_\+clientes)
+\begin{DoxyCompactList}\small\item\em Utilizada na query 1, mas a query 11 não funciona. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFilial_8h_adead690e15e1e3808d3eefcdfaacbebb}\label{RegistoFilial_8h_adead690e15e1e3808d3eefcdfaacbebb}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_adead690e15e1e3808d3eefcdfaacbebb}{swap\+Lista\+Registos}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} l)
+\begin{DoxyCompactList}\small\item\em Por implementar (Query 11) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_ae05e7007af1a186f4a93b8804852d0b7}{filtra\+Registos\+Mes}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf, \mbox{\hyperlink{myTypes_8h_a6946ab849beb844fc3aa9584e6a66b68}{Mes}} m)
+\begin{DoxyCompactList}\small\item\em Filtra duma lista de registos filial os registos que foram feitos no mês me. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{RegistoFilial_8h_afb8c1315ec02f9a8e517259b7e632600}{get\+Lista\+Prods\+Ord\+Quant\+Desc}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Filtra os produtos duma lista de registos filial e ordena a alfabeticamente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFilial_8h_af2b118e3719770a10f6dc8dd677d2f5a}\label{RegistoFilial_8h_af2b118e3719770a10f6dc8dd677d2f5a}} 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{RegistoFilial_8h_af2b118e3719770a10f6dc8dd677d2f5a}{get\+Cons\+Lista\+Prods}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Por implementar (Query 11) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} \mbox{\hyperlink{RegistoFilial_8h_aeac3727683135071b9f5efbaa4ccb4e6}{get\+Lista\+Prods\+Ord\+Inv\+Quant\+Desc}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf, int limit)
+\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_a0cc67f17fec61b0448c388d7dca74ed8}{ordena\+Por\+Prod}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Ordena uma lista de registos filial por ordem alfabetica dos produtos no registo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_afdf7d2da85572be9d5a680a9660deb0d}{remove\+Repetidos}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Retira os registos duma lista de registos que têm o mesmo produto. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{RegistoFilial_8h_a29182ec14b2d5dc4f4009e546cb3ce9e}{get\+Registos\+Filial\+Cliente}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf)
+\begin{DoxyCompactList}\small\item\em Guarda os gastos mensais do cliente num array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} \mbox{\hyperlink{RegistoFilial_8h_aafda4222b3c474af19d36ce5ddc1f4a0}{reg\+Compra\+Prod}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} lrf, \mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}} p, int $\ast$compN, int $\ast$compP)
+\begin{DoxyCompactList}\small\item\em Verifica se esta compra ocorreu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{RegistoFilial_8h_a89178ab2b1f3e92d72f13360188d990e}\label{RegistoFilial_8h_a89178ab2b1f3e92d72f13360188d990e}} 
+\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} \mbox{\hyperlink{RegistoFilial_8h_a89178ab2b1f3e92d72f13360188d990e}{get\+Registos\+Lista\+N\+Prods}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} main\+Lista, \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} l)
+\begin{DoxyCompactList}\small\item\em Por implementar (Query 12) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{RegistoFilial_8h_aa3bfbb2d880dd3034b24efc34d020e93}{close\+Lista\+Registos\+Filial}} (\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} l)
+\begin{DoxyCompactList}\small\item\em Apaga da memoria um Registo Filial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definição da entidade Registo\+Filial e das funções que o manipulam 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{RegistoFilial_8h_aa3bfbb2d880dd3034b24efc34d020e93}\label{RegistoFilial_8h_aa3bfbb2d880dd3034b24efc34d020e93}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!closeListaRegistosFilial@{closeListaRegistosFilial}}
+\index{closeListaRegistosFilial@{closeListaRegistosFilial}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{closeListaRegistosFilial()}{closeListaRegistosFilial()}}
+{\footnotesize\ttfamily void close\+Lista\+Registos\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Apaga da memoria um Registo Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & -\/ Lista de Registos Filial que se vai apagar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{RegistoFilial_8h_adde514791a3e44853ec79dccb5f13d2c}\label{RegistoFilial_8h_adde514791a3e44853ec79dccb5f13d2c}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!concatListaRegistosFilial@{concatListaRegistosFilial}}
+\index{concatListaRegistosFilial@{concatListaRegistosFilial}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{concatListaRegistosFilial()}{concatListaRegistosFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} concat\+Lista\+Registos\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{l1,  }\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{l2 }\end{DoxyParamCaption})}
+
+
+
+Concatena duas listas de Registos Filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l1} & -\/ Uma das listas que se vai concatenar \\
+\hline
+{\em l2} & -\/ A outra lista que se vai concatenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registos\+Filial que resultou da concatenação das duas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_a44054d7ba76105ec353c9be5b36ccab4}\label{RegistoFilial_8h_a44054d7ba76105ec353c9be5b36ccab4}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!consListaRegistosFilial@{consListaRegistosFilial}}
+\index{consListaRegistosFilial@{consListaRegistosFilial}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{consListaRegistosFilial()}{consListaRegistosFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} cons\+Lista\+Registos\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}}}]{r,  }\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf }\end{DoxyParamCaption})}
+
+
+
+Insere um registo filial na cabeça duma lista de registos de filial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & -\/ Registo que se vai inserir à cabeça da lista \\
+\hline
+{\em lrf} & -\/ Lista onde vai se inserir à cabeça \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registos\+Filial com o registo inserido à cabeça 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_afd8bd0f71fd9f792f4104883f0f5fca3}\label{RegistoFilial_8h_afd8bd0f71fd9f792f4104883f0f5fca3}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!criaRegistoFilial@{criaRegistoFilial}}
+\index{criaRegistoFilial@{criaRegistoFilial}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{criaRegistoFilial()}{criaRegistoFilial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_ab2e78641fefbf5c3537ceca76e14fa93}{Registo\+Filial}} cria\+Registo\+Filial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{prod,  }\item[{int}]{q,  }\item[{char}]{modo,  }\item[{int}]{mes }\end{DoxyParamCaption})}
+
+
+
+Cria um registo filial dado os parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prod} & -\/ Produto para o registo \\
+\hline
+{\em q} & -\/ Quantidade para o registo \\
+\hline
+{\em modo} & -\/ Tipo de compra para o registo \\
+\hline
+{\em mes} & -\/ Mes de compra para o registo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Registo\+Filial 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_ae05e7007af1a186f4a93b8804852d0b7}\label{RegistoFilial_8h_ae05e7007af1a186f4a93b8804852d0b7}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!filtraRegistosMes@{filtraRegistosMes}}
+\index{filtraRegistosMes@{filtraRegistosMes}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{filtraRegistosMes()}{filtraRegistosMes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} filtra\+Registos\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf,  }\item[{\mbox{\hyperlink{myTypes_8h_a6946ab849beb844fc3aa9584e6a66b68}{Mes}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Filtra duma lista de registos filial os registos que foram feitos no mês me. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lrf} & -\/ Lista que se vai filtrar \\
+\hline
+{\em m} & -\/ mes que se vai usar para filtrar os registos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registo\+Filial com os registos feitos no mês \textquotesingle{}m\textquotesingle{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_aeac3727683135071b9f5efbaa4ccb4e6}\label{RegistoFilial_8h_aeac3727683135071b9f5efbaa4ccb4e6}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!getListaProdsOrdInvQuantDesc@{getListaProdsOrdInvQuantDesc}}
+\index{getListaProdsOrdInvQuantDesc@{getListaProdsOrdInvQuantDesc}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{getListaProdsOrdInvQuantDesc()}{getListaProdsOrdInvQuantDesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Lista\+Prods\+Ord\+Inv\+Quant\+Desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf,  }\item[{int}]{limit }\end{DoxyParamCaption})}
+
+brief Por implementar (Query 11) \mbox{\Hypertarget{RegistoFilial_8h_afb8c1315ec02f9a8e517259b7e632600}\label{RegistoFilial_8h_afb8c1315ec02f9a8e517259b7e632600}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!getListaProdsOrdQuantDesc@{getListaProdsOrdQuantDesc}}
+\index{getListaProdsOrdQuantDesc@{getListaProdsOrdQuantDesc}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{getListaProdsOrdQuantDesc()}{getListaProdsOrdQuantDesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{catProds_8h_ace54e51fb3cb5aa87a5a4180b4b7701d}{Lista\+Prods}} get\+Lista\+Prods\+Ord\+Quant\+Desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf }\end{DoxyParamCaption})}
+
+
+
+Filtra os produtos duma lista de registos filial e ordena a alfabeticamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lrf} & -\/ lista de registos que se vai filtrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Prods com os produtos que estavam nos registos por ordem decrescente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_a29182ec14b2d5dc4f4009e546cb3ce9e}\label{RegistoFilial_8h_a29182ec14b2d5dc4f4009e546cb3ce9e}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!getRegistosFilialCliente@{getRegistosFilialCliente}}
+\index{getRegistosFilialCliente@{getRegistosFilialCliente}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{getRegistosFilialCliente()}{getRegistosFilialCliente()}}
+{\footnotesize\ttfamily int$\ast$ get\+Registos\+Filial\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf }\end{DoxyParamCaption})}
+
+
+
+Guarda os gastos mensais do cliente num array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lrf} & -\/ Lista de registos do cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+aray com tamanho 12 uma posiçao para a quantidade de gastos mensais 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_a0cc67f17fec61b0448c388d7dca74ed8}\label{RegistoFilial_8h_a0cc67f17fec61b0448c388d7dca74ed8}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!ordenaPorProd@{ordenaPorProd}}
+\index{ordenaPorProd@{ordenaPorProd}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{ordenaPorProd()}{ordenaPorProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} ordena\+Por\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf }\end{DoxyParamCaption})}
+
+
+
+Ordena uma lista de registos filial por ordem alfabetica dos produtos no registo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lrf} & -\/ lista que se vai ordenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registos\+Filial ordenada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_aafda4222b3c474af19d36ce5ddc1f4a0}\label{RegistoFilial_8h_aafda4222b3c474af19d36ce5ddc1f4a0}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!regCompraProd@{regCompraProd}}
+\index{regCompraProd@{regCompraProd}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{regCompraProd()}{regCompraProd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{myTypes_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}} reg\+Compra\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf,  }\item[{\mbox{\hyperlink{produto_8h_a9ce32ae6592adf7426ca173e1c5b77c5}{Produto}}}]{p,  }\item[{int $\ast$}]{compN,  }\item[{int $\ast$}]{compP }\end{DoxyParamCaption})}
+
+
+
+Verifica se esta compra ocorreu. 
+
+\begin{DoxyReturn}{Returns}
+True se a compra com aqueles parametros ocorreu no registo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RegistoFilial_8h_afdf7d2da85572be9d5a680a9660deb0d}\label{RegistoFilial_8h_afdf7d2da85572be9d5a680a9660deb0d}} 
+\index{RegistoFilial.h@{RegistoFilial.h}!removeRepetidos@{removeRepetidos}}
+\index{removeRepetidos@{removeRepetidos}!RegistoFilial.h@{RegistoFilial.h}}
+\doxysubsubsection{\texorpdfstring{removeRepetidos()}{removeRepetidos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}} remove\+Repetidos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegistoFilial_8h_a00495eda5c4603990f3cc00f66ebded3}{Lista\+Registos\+Filial}}}]{lrf }\end{DoxyParamCaption})}
+
+
+
+Retira os registos duma lista de registos que têm o mesmo produto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lrf} & -\/ lista que se vai remover os repetidos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista\+Registos\+Filial sem produtos repetidos, nos registos 
+\end{DoxyReturn}
